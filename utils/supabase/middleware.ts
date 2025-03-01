@@ -1,7 +1,7 @@
-import { createServerClient } from "@supabase/ssr";
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { type NextRequest, NextResponse } from "next/server";
 
-export const updateSession = async (request: NextRequest) => {
+export async function updateSession(request: NextRequest) {
   // This `try/catch` block is only here for the interactive tutorial.
   // Feel free to remove once you have Supabase connected.
   try {
@@ -17,36 +17,40 @@ export const updateSession = async (request: NextRequest) => {
       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
       {
         cookies: {
-          getAll() {
-            return request.cookies.getAll();
+          get(name: string) {
+            return request.cookies.get(name)?.value;
           },
-          setAll(cookiesToSet) {
-            cookiesToSet.forEach(({ name, value }) =>
-              request.cookies.set(name, value),
-            );
-            response = NextResponse.next({
-              request,
+          set(name: string, value: string, options: CookieOptions) {
+            // If the cookie is updated, update the cookies for the request and response
+            request.cookies.set({
+              name,
+              value,
+              ...options,
             });
-            cookiesToSet.forEach(({ name, value, options }) =>
-              response.cookies.set(name, value, options),
-            );
+            response = NextResponse.next({
+              request: {
+                headers: request.headers,
+              },
+            });
+            response.cookies.set({
+              name,
+              value,
+              ...options,
+            });
+          },
+          remove(name: string, options: CookieOptions) {
+            // If the cookie is removed, update the cookies for the request and response
+            request.cookies.delete(name);
+            response = NextResponse.next({
+              request: {
+                headers: request.headers,
+              },
+            });
+            response.cookies.delete(name);
           },
         },
       },
     );
-
-    // This will refresh session if expired - required for Server Components
-    // https://supabase.com/docs/guides/auth/server-side/nextjs
-    const user = await supabase.auth.getUser();
-
-    // protected routes
-    if (request.nextUrl.pathname.startsWith("/protected") && user.error) {
-      return NextResponse.redirect(new URL("/sign-in", request.url));
-    }
-
-    if (request.nextUrl.pathname === "/" && !user.error) {
-      return NextResponse.redirect(new URL("/protected", request.url));
-    }
 
     return response;
   } catch (e) {
@@ -59,4 +63,55 @@ export const updateSession = async (request: NextRequest) => {
       },
     });
   }
-};
+}
+
+export function createClient(request: NextRequest) {
+  // Erstellen einer unveränderten Antwort
+  let response = NextResponse.next({
+    request: {
+      headers: request.headers,
+    },
+  });
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        get(name: string) {
+          return request.cookies.get(name)?.value;
+        },
+        set(name: string, value: string, options: CookieOptions) {
+          // Wenn das Cookie aktualisiert wird, die Cookies für Anfrage und Antwort aktualisieren
+          request.cookies.set({
+            name,
+            value,
+            ...options,
+          });
+          response = NextResponse.next({
+            request: {
+              headers: request.headers,
+            },
+          });
+          response.cookies.set({
+            name,
+            value,
+            ...options,
+          });
+        },
+        remove(name: string, options: CookieOptions) {
+          // Wenn das Cookie entfernt wird, die Cookies für Anfrage und Antwort aktualisieren
+          request.cookies.delete(name);
+          response = NextResponse.next({
+            request: {
+              headers: request.headers,
+            },
+          });
+          response.cookies.delete(name);
+        },
+      },
+    },
+  );
+
+  return { supabase, response };
+}
