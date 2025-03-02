@@ -1,0 +1,1601 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - maison+margiela+tabi",
+        "totalResults": "20600000",
+        "searchTerms": "maison+margiela+tabi",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "b393bcfa042f4429a",
+        "hl": "de"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - maison+margiela+tabi",
+        "totalResults": "20600000",
+        "searchTerms": "maison+margiela+tabi",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "b393bcfa042f4429a",
+        "hl": "de"
+      }
+    ]
+  },
+  "context": {
+    "title": "fashion-ai"
+  },
+  "searchInformation": {
+    "searchTime": 0.48201,
+    "formattedSearchTime": "0.48",
+    "totalResults": "20600000",
+    "formattedTotalResults": "20,600,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Women's Tabi Shoes | Maison Margiela",
+      "htmlTitle": "Women&#39;s <b>Tabi</b> Shoes | <b>Maison Margiela</b>",
+      "link": "https://www.maisonmargiela.com/en-us/maison-margiela/women/shoes/tabi/",
+      "displayLink": "www.maisonmargiela.com",
+      "snippet": "Discover the Maison Margiela collection of tabi Shoes for women. Shop now at the official Maison Margiela online Boutique.",
+      "htmlSnippet": "Discover the <b>Maison Margiela</b> collection of <b>tabi</b> Shoes for women. Shop now at the official <b>Maison Margiela</b> online Boutique.",
+      "formattedUrl": "https://www.maisonmargiela.com/en-us/maison-margiela/women/.../tabi/",
+      "htmlFormattedUrl": "https://www.<b>maisonmargiela</b>.com/en-us/<b>maison</b>-<b>margiela</b>/women/.../<b>tabi</b>/",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "USD",
+            "price": "670.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "620.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "670.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "620.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "670.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "620.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1505.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2405.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1505.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2405.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1505.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2405.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1120.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1190.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1190.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1120.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1120.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1120.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1330.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1330.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1650.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1650.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1455.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1690.00"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFmsas7h_FzfTxTty1wva2KzIg5jm2He1nj-8PSnQkgfRt5eKLhFUhwKy&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Maison Margiela",
+            "msapplication-tilecolor": "#ffffff",
+            "msapplication-config": "/on/demandware.static/Sites-MargielaUS-Site/-/default/dw8d38bf02/favicons/browserconfig.xml",
+            "theme-color": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-title": "Maison Margiela",
+            "facebook-domain-verification": "<meta name=\"facebook-domain-verification\" content=\"yy5zkskyz917j9l4xo6mcaridn97zb\" />"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.maisonmargiela.com/dw/image/v2/AAPK_PRD/on/demandware.static/-/Library-Sites-margiela-shared/default/dw3a0d84b1/MM/MM_PACKAGING_PAGE_PLP_CATEGORY_BANNER_MOBILE.jpg?sw=1000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "I cannot stop thinking about Maison Margiela tabi shoes : r ...",
+      "htmlTitle": "I cannot stop thinking about <b>Maison Margiela tabi</b> shoes : r ...",
+      "link": "https://www.reddit.com/r/femalefashionadvice/comments/1e9ol5x/i_cannot_stop_thinking_about_maison_margiela_tabi/",
+      "displayLink": "www.reddit.com",
+      "snippet": "22.07.2024 ... Tabi socks, yo! These are wool blend hiking ones, but you can easily get them in plain cotton or just wear toe socks.",
+      "htmlSnippet": "22.07.2024 <b>...</b> <b>Tabi</b> socks, yo! These are wool blend hiking ones, but you can easily get them in plain cotton or just wear toe socks.",
+      "formattedUrl": "https://www.reddit.com/.../i_cannot_stop_thinking_about_maison_margiela...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../i_cannot_stop_thinking_about_<b>maison</b>_<b>margiela</b>...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshwpfNCWIwA9RsihnS0YiCIBaxH1JlWp5UYfAFuqbFlEOgZiRGIEnsYQD&s",
+            "width": "208",
+            "height": "243"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1e9ol5x",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/femalefashionadvice on Reddit: I cannot stop thinking about Maison Margiela tabi shoes",
+            "og:site_name": "Reddit",
+            "og:title": "r/femalefashionadvice on Reddit: I cannot stop thinking about Maison Margiela tabi shoes",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/remindmeofthevoid - 197 votes and 157 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1e9ol5x",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/femalefashionadvice/comments/1e9ol5x/i_cannot_stop_thinking_about_maison_margiela_tabi/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/i-cannot-stop-thinking-about-maison-margiela-tabi-shoes-v0-x5q4ck8ltzsd1.png?width=2647&format=png&auto=webp&s=e42869cbad2e8579e1b5dc70f17685df11290ec2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Men's Tabi Shoes | Maison Margiela",
+      "htmlTitle": "Men&#39;s <b>Tabi</b> Shoes | <b>Maison Margiela</b>",
+      "link": "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/tabi/",
+      "displayLink": "www.maisonmargiela.com",
+      "snippet": "Tabi. The Tabi split-toe is inspired by the traditional 15th century Japanese sock bearing the same name – launched for the Maison's debut collection in 1989.",
+      "htmlSnippet": "<b>Tabi</b>. The <b>Tabi</b> split-toe is inspired by the traditional 15th century Japanese sock bearing the same name – launched for the <b>Maison&#39;s</b> debut collection in 1989.",
+      "formattedUrl": "https://www.maisonmargiela.com/en-us/maison-margiela/men/shoes/tabi/",
+      "htmlFormattedUrl": "https://www.<b>maisonmargiela</b>.com/en-us/<b>maison</b>-<b>margiela</b>/men/shoes/<b>tabi</b>/",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "USD",
+            "price": "670.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "620.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "670.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "620.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "670.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "620.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1505.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2405.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1505.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2405.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1505.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2405.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1960.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1650.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1500.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1950.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "2055.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1950.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "7010.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1650.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1390.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1350.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "750.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "750.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1420.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1190.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1120.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "995.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1220.00"
+          },
+          {
+            "pricecurrency": "USD",
+            "price": "1190.00"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFmsas7h_FzfTxTty1wva2KzIg5jm2He1nj-8PSnQkgfRt5eKLhFUhwKy&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Maison Margiela",
+            "msapplication-tilecolor": "#ffffff",
+            "msapplication-config": "/on/demandware.static/Sites-MargielaUS-Site/-/default/dw8d38bf02/favicons/browserconfig.xml",
+            "theme-color": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-title": "Maison Margiela",
+            "facebook-domain-verification": "<meta name=\"facebook-domain-verification\" content=\"yy5zkskyz917j9l4xo6mcaridn97zb\" />"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.maisonmargiela.com/dw/image/v2/AAPK_PRD/on/demandware.static/-/Library-Sites-margiela-shared/default/dw3a0d84b1/MM/MM_PACKAGING_PAGE_PLP_CATEGORY_BANNER_MOBILE.jpg?sw=1000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Maison Margiela boots for Women | SSENSE",
+      "htmlTitle": "<b>Maison Margiela boots</b> for Women | SSENSE",
+      "link": "https://www.ssense.com/en-us/women/designers/maison-margiela/boots",
+      "displayLink": "www.ssense.com",
+      "snippet": "Repurposed materials, distressed treatments, asymmetric draping and tailoring, trompe-l'oeil effects, thoughtfully minimalist leather bags and jewelry, and ...",
+      "htmlSnippet": "Repurposed materials, distressed treatments, asymmetric draping and tailoring, trompe-l&#39;oeil effects, thoughtfully minimalist leather bags and jewelry, and&nbsp;...",
+      "formattedUrl": "https://www.ssense.com/en-us/women/designers/maison-margiela/boots",
+      "htmlFormattedUrl": "https://www.ssense.com/en-us/women/designers/<b>maison</b>-<b>margiela</b>/boots",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwGgb7INLKxkH_X7j05AFbGw-ihFwlwixL4rpUPgrFxHjM82iqnKD_TQ&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui",
+            "author": "SSENSE",
+            "language": "en"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///5fd58510e9ba6fc6b934fde2156aa2e30cc68b9858aaefc398afbd66fc4849ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "All Gender Tabi Shoes | Maison Margiela",
+      "htmlTitle": "All Gender <b>Tabi</b> Shoes | <b>Maison Margiela</b>",
+      "link": "https://www.maisonmargiela.com/en-ae/maison-margiela/all-gender/shoes/tabi/",
+      "displayLink": "www.maisonmargiela.com",
+      "snippet": "Tabi. The Tabi split-toe is inspired by the traditional 15th century Japanese sock bearing the same name – launched for the Maison's debut collection in 1989.",
+      "htmlSnippet": "<b>Tabi</b>. The <b>Tabi</b> split-toe is inspired by the traditional 15th century Japanese sock bearing the same name – launched for the <b>Maison&#39;s</b> debut collection in 1989.",
+      "formattedUrl": "https://www.maisonmargiela.com/en-ae/maison-margiela/all-gender/.../tabi/",
+      "htmlFormattedUrl": "https://www.<b>maisonmargiela</b>.com/en-ae/<b>maison</b>-<b>margiela</b>/all-gender/.../<b>tabi</b>/",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "AED",
+            "price": "3650.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3900.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3650.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3900.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3650.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3900.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4700.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5000.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4850.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4850.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4700.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4700.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "8250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4350.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4350.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4350.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5500.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4550.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5000.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "6100.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "8400.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "6100.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "3750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "4700.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5750.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "8250.00"
+          },
+          {
+            "pricecurrency": "AED",
+            "price": "5300.00"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsdJp9UJcfemRQ9WAW9uuNX8H4U-LUQyVB1RC_hqhk0PeB8WbAqZskD6Be&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Maison Margiela",
+            "msapplication-tilecolor": "#ffffff",
+            "msapplication-config": "/on/demandware.static/Sites-MargielaUAE-Site/-/default/dw8d38bf02/favicons/browserconfig.xml",
+            "theme-color": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-title": "Maison Margiela",
+            "facebook-domain-verification": "<meta name=\"facebook-domain-verification\" content=\"yy5zkskyz917j9l4xo6mcaridn97zb\" />"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.maisonmargiela.com/dw/image/v2/AAPK_PRD/on/demandware.static/-/Library-Sites-margiela-shared/default/dw5567ae71/MM/010125Update/MMSHOES_S57WS0509_P8190_HA777-1.jpg?sw=3000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "NFC Tag Tabi Chelsea Boot : r/MaisonMargiela",
+      "htmlTitle": "NFC Tag <b>Tabi</b> Chelsea Boot : r/<b>MaisonMargiela</b>",
+      "link": "https://www.reddit.com/r/MaisonMargiela/comments/1dwqog6/nfc_tag_tabi_chelsea_boot/",
+      "displayLink": "www.reddit.com",
+      "snippet": "06.07.2024 ... You can download an app to see if there's an NFC chip. Make sure to scan slowly on the right shoe. Also, if the boot has a removable insole, put the phone ...",
+      "htmlSnippet": "06.07.2024 <b>...</b> You can download an app to see if there&#39;s an NFC chip. Make sure to scan slowly on the right shoe. Also, if the boot has a removable insole, put the phone&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/MaisonMargiela/.../nfc_tag_tabi_chelsea_boot/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/<b>MaisonMargiela</b>/.../nfc_tag_<b>tabi</b>_chelsea_boot/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1dwqog6",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/MaisonMargiela on Reddit: NFC Tag Tabi Chelsea Boot",
+            "og:site_name": "Reddit",
+            "og:title": "r/MaisonMargiela on Reddit: NFC Tag Tabi Chelsea Boot",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/sendme432 - 2 votes and 11 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1dwqog6",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/MaisonMargiela/comments/1dwqog6/nfc_tag_tabi_chelsea_boot/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/1dwqog6"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Women's Tabi Shoes | Maison Margiela",
+      "htmlTitle": "Women&#39;s <b>Tabi</b> Shoes | <b>Maison Margiela</b>",
+      "link": "https://www.maisonmargiela.com/en-lt/maison-margiela/women/shoes/tabi/",
+      "displayLink": "www.maisonmargiela.com",
+      "snippet": "Tabi ... The Tabi split-toe is inspired by the traditional 15th century Japanese sock bearing the same name – launched for the Maison's debut collection in 1989.",
+      "htmlSnippet": "<b>Tabi</b> ... The <b>Tabi</b> split-toe is inspired by the traditional 15th century Japanese sock bearing the same name – launched for the <b>Maison&#39;s</b> debut collection in 1989.",
+      "formattedUrl": "https://www.maisonmargiela.com/en-lt/maison-margiela/women/shoes/tabi/",
+      "htmlFormattedUrl": "https://www.<b>maisonmargiela</b>.com/en-lt/<b>maison</b>-<b>margiela</b>/women/shoes/<b>tabi</b>/",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "EUR",
+            "price": "1190.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1190.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1190.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "790.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1200.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "850.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "790.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1200.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "850.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "790.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1200.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "850.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1050.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1050.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1020.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1790.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1320.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1090.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1590.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1590.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1120.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1150.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1250.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "820.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1550.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "920.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "990.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "950.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1750.00"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1850.00"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7o0tYHP6KnLquJU2SD6Fg1IvsSNrP678YpBbiaYmk5OMSvPDVRgOvvMct&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Maison Margiela",
+            "msapplication-tilecolor": "#ffffff",
+            "msapplication-config": "/on/demandware.static/Sites-MargielaEU2-Site/-/default/dw8d38bf02/favicons/browserconfig.xml",
+            "theme-color": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-title": "Maison Margiela",
+            "facebook-domain-verification": "yy5zkskyz917j9l4xo6mcaridn97zb"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.maisonmargiela.com/dw/image/v2/AAPK_PRD/on/demandware.static/-/Library-Sites-margiela-shared/default/dw11f2ef66/MM/010125Update/MMBAGS_SB1WD0040_P7268_HA757-1%20(1).jpg?sw=3000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Maison Margiela Tabi | eBay",
+      "htmlTitle": "<b>Maison Margiela Tabi</b> | eBay",
+      "link": "https://www.ebay.com/shop/maison-margiela-tabi?_nkw=maison+margiela+tabi",
+      "displayLink": "www.ebay.com",
+      "snippet": "Explore a wide range of our Maison Margiela Tabi selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast shipping and ...",
+      "htmlSnippet": "Explore a wide range of our <b>Maison Margiela Tabi</b> selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast shipping and&nbsp;...",
+      "formattedUrl": "https://www.ebay.com/shop/maison-margiela-tabi?_...maison+margiela+tabi",
+      "htmlFormattedUrl": "https://www.ebay.com/shop/<b>maison</b>-<b>margiela</b>-<b>tabi</b>?_...<b>maison</b>+<b>margiela</b>+<b>tabi</b>",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRTOb-WhVVEKU7tIgb07TBgl3k95q3waJuz3rJPjZvu7TGmRgEjL8ylm2-&s",
+            "width": "218",
+            "height": "231"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://i.ebayimg.com/images/g/TccAAOSwe5ZnY~HF/s-l2400.jpg",
+            "twitter:title": "Maison Margiela Tabi | eBay",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "eBay",
+            "msvalidate.01": "34E98E6F27109BE1A9DCF19658EEEE33",
+            "og:title": "Maison Margiela Tabi | eBay",
+            "google-adsense-account": "sites-7757056108965234",
+            "yandex-verification": "6e11485a66d91eff",
+            "y_key": "acf32e2a69cbc2b0",
+            "og:description": "Explore a wide range of our Maison Margiela Tabi selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast shipping and easy returns!",
+            "twitter:image": "https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x1200-margin.png",
+            "referrer": "unsafe-url",
+            "fb:app_id": "102628213125203",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1",
+            "twitter:description": "Explore a wide range of our Maison Margiela Tabi selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast shipping and easy returns!",
+            "og:url": "https://www.ebay.com/shop/maison-margiela-tabi?_nkw=maison+margiela+tabi"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.ebayimg.com/images/g/TccAAOSwe5ZnY~HF/s-l2400.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Margiela Tabi dust bag? : r/MaisonMargiela",
+      "htmlTitle": "Margiela <b>Tabi</b> dust bag? : r/<b>MaisonMargiela</b>",
+      "link": "https://www.reddit.com/r/MaisonMargiela/comments/1djiy1a/margiela_tabi_dust_bag/",
+      "displayLink": "www.reddit.com",
+      "snippet": "19.06.2024 ... I got my Tabis a while ago and saw they came with two of these dust bag shoe cover things. I don't use them but I've seen other people store ...",
+      "htmlSnippet": "19.06.2024 <b>...</b> I got my Tabis a while ago and saw they came with two of these dust bag shoe cover things. I don&#39;t use them but I&#39;ve seen other people store&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/MaisonMargiela/.../margiela_tabi_dust_bag/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/<b>MaisonMargiela</b>/.../<b>margiela</b>_<b>tabi</b>_dust_bag/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHO6Hal3yas-zyOtXFmpZlp-rnh3CNBzsnlIlQ-y5-Yf7kGHsbWhDAZAo&s",
+            "width": "205",
+            "height": "246"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/margiela-tabi-dust-bag-v0-g86h4v7u3j7d1.jpeg?auto=webp&s=1b71eb121b79236e5ca6695a80810e5c6959a156",
+            "theme-color": "#000000",
+            "og:image:width": "960",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/MaisonMargiela on Reddit: Margiela Tabi dust bag?",
+            "og:site_name": "Reddit",
+            "og:title": "r/MaisonMargiela on Reddit: Margiela Tabi dust bag?",
+            "og:image:height": "1152",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/jellysoobie - 0 votes and 7 comments",
+            "twitter:image": "https://preview.redd.it/margiela-tabi-dust-bag-v0-g86h4v7u3j7d1.jpeg?auto=webp&s=1b71eb121b79236e5ca6695a80810e5c6959a156",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/MaisonMargiela/comments/1djiy1a/margiela_tabi_dust_bag/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/margiela-tabi-dust-bag-v0-g86h4v7u3j7d1.jpeg?auto=webp&s=1b71eb121b79236e5ca6695a80810e5c6959a156"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "My first luxury: A pair of Maison Margiela Tabi boots",
+      "htmlTitle": "My first luxury: A pair of <b>Maison Margiela Tabi</b> boots",
+      "link": "https://andscape.com/features/my-first-luxury-a-pair-of-maison-margiela-tabi-boots/",
+      "displayLink": "andscape.com",
+      "snippet": "12.10.2023 ... My first luxury: A pair of Maison Margiela Tabi boots ... Shopping for designer goods is about more than beauty, workmanship and cost. It's an ...",
+      "htmlSnippet": "12.10.2023 <b>...</b> My first luxury: A pair of <b>Maison Margiela Tabi</b> boots ... Shopping for designer goods is about more than beauty, workmanship and cost. It&#39;s an&nbsp;...",
+      "formattedUrl": "https://andscape.com/.../my-first-luxury-a-pair-of-maison-margiela-tabi-bo...",
+      "htmlFormattedUrl": "https://andscape.com/.../my-first-luxury-a-pair-of-<b>maison</b>-<b>margiela</b>-<b>tabi</b>-bo...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-BZZVrgpeIM0DcK-Ftk0qMh7vd4QuqzbdLul_diSS8QJF3NS019y-Y8&s",
+            "width": "299",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://andscape.com/wp-content/uploads/2023/10/MASA_andscape_My_First_Purchase_Tianni-Graham_A1E_3B.jpg?w=700",
+            "article:published_time": "2023-10-12T12:16:27+00:00",
+            "og:image:width": "700",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Andscape",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Filed under",
+            "msapplication-tileimage": "https://andscape.com/wp-content/uploads/2022/07/cropped-andscape-icon.png?w=270",
+            "og:description": "Shopping for designer goods is about more than beauty, workmanship and cost. It’s an emotional experience that often comes with a personal story. In this series…",
+            "twitter:image": "https://andscape.com/wp-content/uploads/2023/10/MASA_andscape_My_First_Purchase_Tianni-Graham_A1E_3B.jpg?w=640",
+            "article:publisher": "https://www.facebook.com/andscape",
+            "twitter:data1": "Channing Hargrove",
+            "twitter:data2": "Fashion, Maison Margiela, My First Luxury, Style, Tabi, Tianni Janae Graham",
+            "twitter:text:title": "My first luxury: A pair of Maison Margiela Tabi boots",
+            "twitter:site": "Andscape",
+            "article:modified_time": "2025-02-19T16:40:43+00:00",
+            "article:content_tier": "free",
+            "og:type": "article",
+            "twitter:site:id": "3033098871",
+            "twitter:widgets:csp": "on",
+            "author": "Channing Hargrove",
+            "og:title": "My first luxury: A pair of Maison Margiela Tabi boots",
+            "og:image:height": "394",
+            "twitter:maxage": "300",
+            "color-scheme": "only light",
+            "fb:pages": "1583598865225460",
+            "article:author": "https://andscape.com/contributors/channing-hargrove/",
+            "dc.date.issued": "303633",
+            "facebook-domain-verification": "qaqen3n93wluvws9olkk3dn1ktbksx",
+            "twitter:image:src": "https://andscape.com/wp-content/uploads/2023/10/MASA_andscape_My_First_Purchase_Tianni-Graham_A1E_3B.jpg?w=700",
+            "fb:app_id": "834240743288407",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://andscape.com/features/my-first-luxury-a-pair-of-maison-margiela-tabi-boots/",
+            "article:opinion": "false"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://andscape.com/wp-content/uploads/2023/10/MASA_andscape_My_First_Purchase_Tianni-Graham_A1E_3B.jpg?w=700"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ]
+      }
+    }
+  ]
+}

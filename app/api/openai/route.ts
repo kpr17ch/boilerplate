@@ -18,26 +18,25 @@ export async function POST(request: Request) {
       );
     }
 
-    // System-Prompt erstellen, der das gewünschte JSON-Format vorgibt
-    const systemPrompt = `Du bist ein hilfreicher Produktberater. Basierend auf der Benutzereingabe, empfehle 8 passende Produkte.
-    Gib deine Antwort AUSSCHLIESSLICH als JSON-Objekt im folgenden Format zurück:
-    {
-      "products": [
-        {
-          "id": "1",
-          "name": "Produktname",
-          "description": "Kurze Produktbeschreibung",
-          "price": 99.99,
-          "rating": 4.5,
-          "category": "Kategoriename",
-          "image": "product-1.jpg"
-        },
-        ...
-      ]
-    }
-    Stelle sicher, dass die Preise realistisch sind und die Bewertungen zwischen 1 und 5 liegen.
-    Verwende für die Bilder Platzhalternamen wie "product-1.jpg" bis "product-5.jpg".
-    Gib KEINE zusätzlichen Erklärungen oder Text außerhalb des JSON-Objekts zurück.`;
+    // System-Prompt erstellen, der nur einen Suchbegriff für Vestiaire Collective zurückgibt
+    const systemPrompt = `Du bist ein hilfreicher Assistent, der Benutzereingaben in effektive Suchbegriffe für die Vestiaire Collective Plattform umwandelt.
+    Vestiaire Collective ist ein Online-Marktplatz für gebrauchte Luxusmode und Designerkleidung.
+    
+    Deine Aufgabe ist es, die Benutzereingabe zu analysieren und einen präzisen Suchbegriff zu generieren, der auf Vestiaire Collective verwendet werden kann.
+    
+    Gib NUR den Suchbegriff zurück, ohne zusätzliche Erklärungen oder Formatierungen.
+    Der Suchbegriff sollte:
+    - Kurz und präzise sein
+    - Relevante Marken, Kategorien oder Produkttypen enthalten
+    - Keine Sonderzeichen enthalten (außer + für Leerzeichen)
+    - Keine Anführungszeichen enthalten
+    
+    Beispiele:
+    Eingabe: "Ich suche eine schwarze Gucci Handtasche"
+    Ausgabe: gucci+black+bag
+    
+    Eingabe: "Rote Louboutin High Heels"
+    Ausgabe: louboutin+red+heels`;
 
     // Anfrage an OpenAI senden
     const response = await openai.chat.completions.create({
@@ -46,29 +45,14 @@ export async function POST(request: Request) {
         { role: 'system', content: systemPrompt },
         { role: 'user', content: query }
       ],
-      temperature: 0.7,
+      temperature: 0.3, // Niedrigere Temperatur für konsistentere Ergebnisse
     });
 
-    // Antwort extrahieren
+    // Antwort extrahieren und bereinigen
     const content = response.choices[0]?.message?.content || '';
+    const searchTerm = content.trim();
     
-    // Versuchen, JSON aus der Antwort zu extrahieren
-    try {
-      // Suche nach JSON-Objekt in der Antwort
-      const jsonMatch = content.match(/\{[\s\S]*\}/);
-      const jsonString = jsonMatch ? jsonMatch[0] : content;
-      const data = JSON.parse(jsonString);
-      
-      return NextResponse.json(data);
-    } catch (error) {
-      console.error('Fehler beim Parsen der JSON-Antwort:', error);
-      console.log('Erhaltene Antwort:', content);
-      
-      return NextResponse.json(
-        { error: 'Fehler beim Parsen der Antwort', rawContent: content },
-        { status: 500 } 
-      );
-    }
+    return NextResponse.json({ searchTerm });
   } catch (error) {
     console.error('Fehler bei der OpenAI-Anfrage:', error);
     

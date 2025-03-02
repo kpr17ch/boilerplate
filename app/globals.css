@@ -2,11 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Didot';
+  src: url('https://cdn.jsdelivr.net/gh/starksaw/cdn@main/fonts/Didot.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('https://cdn.jsdelivr.net/gh/starksaw/cdn@main/fonts/Didot-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/fonts/NeueMachina-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/fonts/NeueMachina-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/fonts/NeueMachina-Ultrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
   --primary-color: #5E6AD2;
+}
+
+*, *::before, *::after {
+  font-family: var(--font-neue-machina), sans-serif !important;
 }
 
 body {
@@ -17,6 +61,148 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: var(--font-neue-machina), sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Typography für Fashion AI */
+.fashion-ai h1, .fashion-ai h2, .fashion-ai h3, .fashion-ai h4, .fashion-ai h5, .fashion-ai h6 {
+  font-family: var(--font-neue-machina);
+  font-weight: 800; /* Ultrabold für Überschriften */
+  letter-spacing: 0.05em;
+}
+
+/* Loading animation */
+.dot-flashing {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  background-color: #000;
+  color: #000;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  background-color: #000;
+  color: #000;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  background-color: #000;
+  color: #000;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #000;
+  }
+  50%, 100% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Custom button styles */
+.btn-fashion {
+  @apply uppercase tracking-widest text-xs font-light;
+  transition: all 0.2s ease;
+}
+
+.btn-fashion:hover {
+  @apply bg-black text-white;
+}
+
+/* Product card styling */
+.product-card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Chat message styling */
+.message-bubble {
+  transition: transform 0.3s ease;
+}
+
+.message-bubble:hover {
+  transform: translateY(-2px);
+}
+
+/* Für den Sidebar Toggle */
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Fashion AI spezifische Styles */
+.fashion-ai {
+  @apply bg-white text-black;
+  font-family: var(--font-neue-machina);
 }
 
 @layer utilities {

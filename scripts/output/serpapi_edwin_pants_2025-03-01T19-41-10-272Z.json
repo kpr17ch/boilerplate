@@ -1,0 +1,751 @@
+{
+  "search_metadata": {
+    "id": "67c362346bee28303f13e7f1",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0913f3dfe76b7b3e/67c362346bee28303f13e7f1.json",
+    "created_at": "2025-03-01 19:38:28 UTC",
+    "processed_at": "2025-03-01 19:38:28 UTC",
+    "google_url": "https://www.google.com/search?q=edwin%2Bpants&oq=edwin%2Bpants&hl=de&gl=de&num=10&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/0913f3dfe76b7b3e/67c362346bee28303f13e7f1.html",
+    "total_time_taken": 2.03
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "edwin+pants",
+    "google_domain": "google.com",
+    "hl": "de",
+    "gl": "de",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "edwin+pants",
+    "organic_results_state": "Results for exact spelling"
+  },
+  "knowledge_graph": {
+    "entity_type": "related_questions"
+  },
+  "inline_images": [
+    {
+      "source": "https://edwin-europe.com/de-de/wide-pant-kurabo-recycle-denim-red-selvage-14oz-100-cotton-blue-rinsed-i032085-01-02",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/04225b297663e9e084b1598640372804c77c048c9782be547f9ca8e9937c373d.jpeg",
+      "original": "https://cdn.edwin-europe.com/media/catalog/product/cache/c0d8e13255319fd43d7de8267e591f40/i/0/i032085_01_02-of-03.jpg",
+      "title": "Wide Pant",
+      "source_name": "EDWIN"
+    },
+    {
+      "source": "https://edwin-europe.com/de-de/wide-pant-kaihara-dark-pure-indigo-rainbow-selvage-13-5oz-100-cotton-blue-unwashed-i032814-01-99",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/04225b297663e9e0457c6c410f3794e365eeb6e8260054a658ed86cd0f7bff19.jpeg",
+      "original": "https://cdn.edwin-europe.com/media/catalog/product/cache/c0d8e13255319fd43d7de8267e591f40/I/0/I032814_01_99-OF-02.jpg",
+      "title": "Wide Pant",
+      "source_name": "EDWIN"
+    },
+    {
+      "source": "https://edwin-europe.com/de-de/storm-pant-nicola-blue-denim-100-cotton-11-6oz-blue-mid-marble-wash-i031098-01-j9",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/04225b297663e9e00ad23d69cbc333f800910a7f29c4d319d6013d2d637b99b0.jpeg",
+      "original": "https://cdn.edwin-europe.com/media/catalog/product/cache/c0d8e13255319fd43d7de8267e591f40/i/0/i031098_01_j9-of-03.jpg",
+      "title": "Storm Pant",
+      "source_name": "EDWIN"
+    },
+    {
+      "source": "https://www.mey-edlich.de/edwin-jeans-kurabo/p/24-0098",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/04225b297663e9e007a4930687ab065dcf0eaac1daa0e3e7747ccc43cd8469d5.jpeg",
+      "original": "https://media.mey-edlich.de/products/mey-edlich/images/1441x1922/EC24_0098_RA.jpg",
+      "title": "Edwin Jeans Kurabo",
+      "source_name": "Mey & Edlich"
+    },
+    {
+      "source": "https://edwin-northamerica.com/",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/04225b297663e9e017ea55ab34ab5b4abe2ff7985b45f78b2cb6a19e3bc267da.jpeg",
+      "original": "https://edwin-northamerica.com/cdn/shop/files/WET-BLACK-STRAIGHT-SIDE.jpg?v=1717345392&width=2048",
+      "title": "Jeans, Denim Jackets & Clothing | Edwin North America ...",
+      "source_name": "edwin-northamerica.com"
+    },
+    {
+      "source": "https://edwin-europe.com/de-de/loose-straight-jeans-kaihara-indigo-lightweight-red-selvage-100-cotton-10-5oz-blue-unwashed-i033518-01-99",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/04225b297663e9e0fec74cb1fd325bc4d3d2ee74145cc99e11bbf7b333f5f037.jpeg",
+      "original": "https://cdn.edwin-europe.com/media/catalog/product/cache/c0d8e13255319fd43d7de8267e591f40/e/d/edwin_ecom_ss24__i033518_01_99_loose_straight_blue_unwashed_0105.jpg",
+      "title": "Loose Straight Jeans",
+      "source_name": "EDWIN"
+    },
+    {
+      "source": "https://www.burgundschild.com/collections/edwin",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq8s-ZNUck3ekFKaQVUtDWaTGuLcGstBTz_e3C9VbUJjGIOzknX7b1pI&s",
+      "original": "https://www.burgundschild.com/cdn/shop/products/unnamed-26549fa5e41be4.jpg?v=1721246283&width=1280",
+      "title": "Edwin",
+      "source_name": "Burg & Schild"
+    },
+    {
+      "source": "https://edwin-usa.com/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIDq-MPcpS_8BKdtY8svmEyJpMJX0M4sYLQr9ZyvS7XHfldrZOscSmol0&s",
+      "original": "https://edwin-usa.com/cdn/shop/files/CORACARGO_SPACE-20.jpg?v=1735584219",
+      "title": "Premium Womens Denim Jeans Made in the USA | EDWIN USA",
+      "source_name": "edwin-usa.com"
+    },
+    {
+      "source": "https://www.ridersroom.de/brands/edwin/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW9Q4GsDeBYyglqKxX2dnpnQXr3Lib-2pPGT7Z0fx9BlVvymn9LlJ30Ig&s",
+      "original": "https://www.ridersroom.de/wp-content/uploads/2020/04/edwin-jeans-kaufen-hamburg.webp",
+      "title": "EDWIN | Jeans kaufen | RIDERS ROOM Hamburg",
+      "source_name": "riders room"
+    },
+    {
+      "source": "https://www.mey-edlich.de/edwin-jeans-kurabo/p/24-0098",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs6jbmCAOMok_u7nOLc2wy_ihiHjgWOAU_Vf4KzbRcRBxLEPDBmjtoD2o&s",
+      "original": "https://media.mey-edlich.de/products/mey-edlich/images/1441x1922/EC24_0098_FA.jpg",
+      "title": "Edwin Jeans Kurabo",
+      "source_name": "Mey & Edlich"
+    },
+    {
+      "source": "https://edwin-northamerica.com/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTj94CyxyzzY29TiNOUQdS4lkhN369YXr_G_1s-pzhOZ9MqTOCVdMeWU4&s",
+      "original": "https://edwin-northamerica.com/cdn/shop/files/Contact-Slider-Artboard_3-100.jpg?v=1702253863&width=2732",
+      "title": "Jeans, Denim Jackets & Clothing | Edwin North America ...",
+      "source_name": "edwin-northamerica.com"
+    },
+    {
+      "source": "https://www.burgundschild.com/collections/edwin",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA4WBjs4ewNFCuNca5f_FE5ZcTV3D6Uw5_bIcqENXNsodLedovE9QQA5M&s",
+      "original": "https://www.burgundschild.com/cdn/shop/products/Edwin_Jeans_ED-47_indigo-9.jpg?v=1706520377&width=1280",
+      "title": "Edwin",
+      "source_name": "Burg & Schild"
+    }
+  ],
+  "immersive_products": [
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56b818f1d90267021df4928baec7ea4677.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c561dc59e9ffe492fc86aba396e509d61e769127d46fccdc928.png",
+      "source": "EDWIN",
+      "title": "Edwin Wide Pant",
+      "rating": 4,
+      "reviews": 1,
+      "price": "190,00 €",
+      "extracted_price": 190,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTE2OTQ2OTI1MTMxMTQyMzk2OTMiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI1OTMwODgyMzgzNDAwNjgwMzQyIiwiaW1hZ2VEb2NpZCI6IjEyMTM1MTg0NTAzMjUwNDExNTQzIiwicmRzIjoiUENfOTEyMzE3NzUwMDY5MTk1MTk3NHxQUk9EX1BDXzkxMjMxNzc1MDA2OTE5NTE5NzQiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjkxMjMxNzc1MDA2OTE5NTE5NzQiLCJtaWQiOiI1NzY0NjI4NTUwNDU2Mzg5NjYiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTE2OTQ2OTI1MTMxMTQyMzk2OTMiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI1OTMwODgyMzgzNDAwNjgwMzQyIiwiaW1hZ2VEb2NpZCI6IjEyMTM1MTg0NTAzMjUwNDExNTQzIiwicmRzIjoiUENfOTEyMzE3NzUwMDY5MTk1MTk3NHxQUk9EX1BDXzkxMjMxNzc1MDA2OTE5NTE5NzQiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjkxMjMxNzc1MDA2OTE5NTE5NzQiLCJtaWQiOiI1NzY0NjI4NTUwNDU2Mzg5NjYiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "11694692513114239693",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=11694692513114239693"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c567860c474df6a68510ff76d8f810f48ee.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c566533fc4c99558e5590be5df71a09e7e41737c9786b4eeecb.png",
+      "source": "Burg & Schild",
+      "title": "EDWIN ED-47 Regular Straight Red Listed Selvedge",
+      "price": "169,95 €",
+      "extracted_price": 169.95,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTc1OTY5MjM5ODQ2OTMxODc4NzUiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNjAwMzE1MzgxMjQ4MjMxMDA5MCIsImltYWdlRG9jaWQiOiIxNjU1NTU5NDcxMjIyMDA5NTg1IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNTE1ODYyODQ2NzU5ODY3NzMzNCIsIm1pZCI6IjU3NjQ2Mjc5NDIyODY2NzcyMSIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ==",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTc1OTY5MjM5ODQ2OTMxODc4NzUiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNjAwMzE1MzgxMjQ4MjMxMDA5MCIsImltYWdlRG9jaWQiOiIxNjU1NTU5NDcxMjIyMDA5NTg1IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNTE1ODYyODQ2NzU5ODY3NzMzNCIsIm1pZCI6IjU3NjQ2Mjc5NDIyODY2NzcyMSIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ%3D%3D",
+      "product_id": "17596923984693187875",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=17596923984693187875"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c564537e77cde7be55ac01b38746579d7e2.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c560e6c2c60746690e535188a705bbe18bde546f0e3fe9df296.png",
+      "source": "EDWIN",
+      "title": "EDWIN Tyrell Pant",
+      "price": "130,00 €",
+      "extracted_price": 130,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTU2Mjc0NDc3MDQwMTc1ODc5NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE3ODExNjc3OTE0Njg3ODIzOTA3IiwiaW1hZ2VEb2NpZCI6IjEwMzY5NDg2MDA1OTQzMDc3NTkxIiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNjkwMDY4Mjk5MDk2NTMyNTg2OCIsIm1pZCI6IjU3NjQ2Mjg2MDE3ODc5MTI5NCIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ==",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTU2Mjc0NDc3MDQwMTc1ODc5NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE3ODExNjc3OTE0Njg3ODIzOTA3IiwiaW1hZ2VEb2NpZCI6IjEwMzY5NDg2MDA1OTQzMDc3NTkxIiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNjkwMDY4Mjk5MDk2NTMyNTg2OCIsIm1pZCI6IjU3NjQ2Mjg2MDE3ODc5MTI5NCIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ%3D%3D",
+      "product_id": "5562744770401758796",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=5562744770401758796"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c562bcf03f0c62184ac16ff0d0ffbccd500.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c560d51ab79a1fb2f296d5ed7f4167c3c6430c3aa6f16604d6b.png",
+      "source": "Zalando",
+      "title": "Edwin Jeans Tapered Fit Black/Dark, Herren, Größe: 28x32, Black/dark",
+      "rating": 4.8,
+      "reviews": 24,
+      "price": "89,95 €",
+      "extracted_price": 89.95,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTgxMzQ4OTM4Mjc5OTU2NTQwNyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE5MDM3NzUyNDMxMDQ3NTUwMzgiLCJpbWFnZURvY2lkIjoiMTUyNDkxNDMyODUzNDgyNDE3MjMiLCJyZHMiOiJQUk9EX1ZBUl81NDc1NzMwMjMzOTQ1ODI2NzR8VkFSXzU0NzU3MzAyMzM5NDU4MjY3NCIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTgxMzQ4OTM4Mjc5OTU2NTQwNyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE5MDM3NzUyNDMxMDQ3NTUwMzgiLCJpbWFnZURvY2lkIjoiMTUyNDkxNDMyODUzNDgyNDE3MjMiLCJyZHMiOiJQUk9EX1ZBUl81NDc1NzMwMjMzOTQ1ODI2NzR8VkFSXzU0NzU3MzAyMzM5NDU4MjY3NCIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "5813489382799565407",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=5813489382799565407"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56a7e341c9791be6e3049324acaa825e7c.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56f015728a45858051567c80acf747cf8fa4f3da4a4297ca99.png",
+      "source": "Burg & Schild",
+      "title": "Edwin Nashville",
+      "price": "169,95 €",
+      "extracted_price": 169.95,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMzg5MTI5MzYyNzY4MDg4Mjk5NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk2NTUzNDg0MDA1ODA1MDM4NzkiLCJpbWFnZURvY2lkIjoiMTgwNjcyOTY4Njg4ODU4NTg4NDAiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE1MTEyODM1Nzc0NjE4NTM0MzQyIiwibWlkIjoiNTc2NDYyODU3MTYwOTkxNTA5IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMzg5MTI5MzYyNzY4MDg4Mjk5NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijk2NTUzNDg0MDA1ODA1MDM4NzkiLCJpbWFnZURvY2lkIjoiMTgwNjcyOTY4Njg4ODU4NTg4NDAiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE1MTEyODM1Nzc0NjE4NTM0MzQyIiwibWlkIjoiNTc2NDYyODU3MTYwOTkxNTA5IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "3891293627680882996",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=3891293627680882996"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56681812708447d2f30011d128ba901300.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c560e71a376e01b545ce286792dfed1d65d2ac728db212ce4a3.png",
+      "source": "HHV",
+      "title": "Herren Edwin Tyrell Pant",
+      "price": "101,95 €",
+      "extracted_price": 101.95,
+      "original_price": "120 €",
+      "extracted_original_price": 120,
+      "extensions": [
+        "SALE"
+      ],
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDM2MTg0ODc0NDUyNTU3MDU2NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijc2NTY3NTUxMzE1NDExMTA4MTUiLCJpbWFnZURvY2lkIjoiMTE1OTI5MDY1MjcxNzI2NzkzMzUiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE1NzgwNTMzODU1NDk2NTYzOTIzIiwibWlkIjoiNTc2NDYyNDcyNjU5MzI2NjQ4IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDM2MTg0ODc0NDUyNTU3MDU2NiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6Ijc2NTY3NTUxMzE1NDExMTA4MTUiLCJpbWFnZURvY2lkIjoiMTE1OTI5MDY1MjcxNzI2NzkzMzUiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE1NzgwNTMzODU1NDk2NTYzOTIzIiwibWlkIjoiNTc2NDYyNDcyNjU5MzI2NjQ4IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "4361848744525570566",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=4361848744525570566"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56cdbc77afb64e13ac780db87688cf15a9.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c567c288e38a36e6186cbb1245ebf2210cc98f4ded8143e42b2.png",
+      "source": "EDWIN",
+      "title": "EDWIN Labour Pant",
+      "price": "110,00 €",
+      "extracted_price": 110,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTUzMDk1NzYzNTQ4Njc3NTAyMCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEzMzg0NDA2NDQ0MTMzMzk3Mjg1IiwiaW1hZ2VEb2NpZCI6IjQ3MzQzMDA2ODk0MjkzOTMyMzMiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjU0NjI4MDM3NzYzNzQ4MTA2NzIiLCJtaWQiOiI1NzY0NjI4MTM0NTcxMTIwNjQiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTUzMDk1NzYzNTQ4Njc3NTAyMCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEzMzg0NDA2NDQ0MTMzMzk3Mjg1IiwiaW1hZ2VEb2NpZCI6IjQ3MzQzMDA2ODk0MjkzOTMyMzMiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjU0NjI4MDM3NzYzNzQ4MTA2NzIiLCJtaWQiOiI1NzY0NjI4MTM0NTcxMTIwNjQiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "5530957635486775020",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=5530957635486775020"
+    },
+    {
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56f6fd60e8362a47e12df2216c23a763a2.webp",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ac5b2474aa7435a43fe0833945407c56915f0abd6a5c1359b9cbec15ff1b50df8d400a88df66e0e0.png",
+      "source": "BSTN Store",
+      "title": "Edwin Tyrell Pant men Jeans blue Größe: L",
+      "price": "71,99 €",
+      "extracted_price": 71.99,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiMTY3MzAwNDMzODg1OTQ2OTk4MTciLCJjYXRhbG9naWQiOiIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNjczMDA0MzM4ODU5NDY5OTgxNyIsImltYWdlRG9jaWQiOiIyNjM3NTgyMDExNTY3Mzc5MDA3IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIiLCJtaWQiOiIiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiMTY3MzAwNDMzODg1OTQ2OTk4MTciLCJjYXRhbG9naWQiOiIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNjczMDA0MzM4ODU5NDY5OTgxNyIsImltYWdlRG9jaWQiOiIyNjM3NTgyMDExNTY3Mzc5MDA3IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIiLCJtaWQiOiIiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "16730043388594699817",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=16730043388594699817"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR1VUjDDDC9piXE1JLVRuD2yqzc--qbti18tgDXPqxoy2VSt4WBjT3Q9_laY9H5XCWA3Y5fN5ZQn2UgAXz9w7roo2WayFlKgiQ0xiOVcqS3oiREHkPy3PSw5w",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTIo4enIj_4zUk7yNof7NneWJS-Vr0PFGmAT2602sdyI9aaF20Rc8mUDRfj7FUNRX5u0mrHWzqMPLP4MaLipH0CoHbrJmC-",
+      "source": "Stay on",
+      "title": "Edwin Herren Cosmos Pant",
+      "price": "119,95 €",
+      "extracted_price": 119.95,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDg2MDUyMDY0MTE3MzkwMDg0MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEyODE1NTQ3NTI0MzgxMTk4NjA4IiwiaW1hZ2VEb2NpZCI6Ijg2NjExOTExMTc2NDEwMTY3ODEiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjEzODUxODk1NTQ3NTU2MDI2ODciLCJtaWQiOiI1NzY0NjI3Njk4MjM3OTg2MDMiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDg2MDUyMDY0MTE3MzkwMDg0MSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjEyODE1NTQ3NTI0MzgxMTk4NjA4IiwiaW1hZ2VEb2NpZCI6Ijg2NjExOTExMTc2NDEwMTY3ODEiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjEzODUxODk1NTQ3NTU2MDI2ODciLCJtaWQiOiI1NzY0NjI3Njk4MjM3OTg2MDMiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "4860520641173900841",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=4860520641173900841"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSi9Jpxi6SfjcroMzrC6mr3JrKK1ZvF5HslGijBTghy-nqyTPuS-Eyk1q11S5U_3novcLEehDM-5B4vCQjCx6NwvsE-FAgRA0TIhG7UHNVtZaQAHnYMrMr94Q",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTpZ5z5VhlI_yMIqJ1zHEmLfdbSvfaMnFsWRzzaVUy_x1CL9vhWP8B66_u_2oEHSUC1y9aRVcaw9_vgVKVv_NbP4TCDNmc1gz-m",
+      "source": "EDWIN",
+      "title": "Edwin Sly Pant men",
+      "rating": 2,
+      "reviews": 1,
+      "price": "70,00 €",
+      "extracted_price": 70,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNjk4NjQzMjg3NDI4MzQzMjM3MyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE1MDgwMzg2NjU3MzQyNjE0NDY4IiwiaW1hZ2VEb2NpZCI6IjE1MzE1NjMyODgyMzM0NDc4MzIxIiwicmRzIjoiUENfMzMyNTA3MTY5NTYyNzM2MTc0OXxQUk9EX1BDXzMzMjUwNzE2OTU2MjczNjE3NDkiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjMzMjUwNzE2OTU2MjczNjE3NDkiLCJtaWQiOiI1NzY0NjI4NTI0NzU0ODY4NjMiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNjk4NjQzMjg3NDI4MzQzMjM3MyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE1MDgwMzg2NjU3MzQyNjE0NDY4IiwiaW1hZ2VEb2NpZCI6IjE1MzE1NjMyODgyMzM0NDc4MzIxIiwicmRzIjoiUENfMzMyNTA3MTY5NTYyNzM2MTc0OXxQUk9EX1BDXzMzMjUwNzE2OTU2MjczNjE3NDkiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjMzMjUwNzE2OTU2MjczNjE3NDkiLCJtaWQiOiI1NzY0NjI4NTI0NzU0ODY4NjMiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "6986432874283432373",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=6986432874283432373"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQOR5twSwQtjKC3VC1k_0RVR0g2CpQVgVNlLCwEaCsb8om05b9gxINRq58hecK9CoOZWPWDyuXFDx029Y5neNmMRxvkaq-HjlR1IKaxBtWxtjtFQBGqeX_1",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcS_ifSk_vzlnJ_MaqctvRbdFUrW54E80dzisWh-VFR6gT_qMEYen3X9YBkdMTeXr13a4WDeYQSndEUzC9V2uQ-ylxYmGCMtEjoIaQ",
+      "source": "Das-Falkenkind.de",
+      "title": "Edwin Jeans Hose Ed-80 Slim Denim Trouser Pantaloni Pantalones Japan",
+      "price": "34,99 €",
+      "extracted_price": 34.99,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQ3MDAxMTA4OTcyNTI2MTM2ODIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI1MjQ3NDc1OTI5ODI3NzI5NTU5IiwiaW1hZ2VEb2NpZCI6IjE4MjkxNTM2NTgzODkwODA2NzIiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE1NDk2MTk5NDYyODcwMjQ1NzM5IiwibWlkIjoiNTc2NDYyNDkyNjkwNDM4NzQxIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQ3MDAxMTA4OTcyNTI2MTM2ODIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI1MjQ3NDc1OTI5ODI3NzI5NTU5IiwiaW1hZ2VEb2NpZCI6IjE4MjkxNTM2NTgzODkwODA2NzIiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE1NDk2MTk5NDYyODcwMjQ1NzM5IiwibWlkIjoiNTc2NDYyNDkyNjkwNDM4NzQxIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "14700110897252613682",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=14700110897252613682"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQFSsASgWgMfi4AtdAB2hNZ5pFt_XrYovlJ03aBLX27mc0TSeJbGYFeR0Cb352uEjDSW3bwX4A4lLrzEGyLzH8U2Af0kmq7CUOr1wELR9OW1tlz64Hk6TZx",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcR6uz_G3ivVFJeJRxMt9WSqkmXgUbsRH95sgYVL01WkZg2AV05C_Yv4GA74JNEIKkmexq0nNKn9rq8VubpCzmpGpZA",
+      "source": "HHV",
+      "title": "Edwin Matrix Pant",
+      "price": "101,95 €",
+      "extracted_price": 101.95,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDUzMDE3MDg5NjY4NTgwNzU1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE4MjQ3MjMwMjc0NzMwNzY2MDM1IiwiaW1hZ2VEb2NpZCI6IjE0Mjg2NDcxNzcyNTk4ODg1NTQiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE3MjU5NjMyODg5MzgzNTMzNDQxIiwibWlkIjoiNTc2NDYyODU0MDg5NTYxNzA1IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDUzMDE3MDg5NjY4NTgwNzU1OCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE4MjQ3MjMwMjc0NzMwNzY2MDM1IiwiaW1hZ2VEb2NpZCI6IjE0Mjg2NDcxNzcyNTk4ODg1NTQiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjE3MjU5NjMyODg5MzgzNTMzNDQxIiwibWlkIjoiNTc2NDYyODU0MDg5NTYxNzA1IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "4530170896685807558",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=4530170896685807558"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSq40Zzydmf9hAXQvhgIrsNGgEIns-vN8B55UG6gwCpJU7hYE4gta300JLIAUs7tHBgcdeb6zomgXX-M11cfRpO2TRqk0rHugNCYFMDBI6Lh9RkAvF2hEWilw",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTpZ5z5VhlI_yMIqJ1zHEmLfdbSvfaMnFsWRzzaVUy_x1CL9vhWP8B66_u_2oEHSUC1y9aRVcaw9_vgVKVv_NbP4TCDNmc1gz-m",
+      "source": "EDWIN",
+      "title": "Edwin Cosmos Pant",
+      "price": "60,00 €",
+      "extracted_price": 60,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTYyODI5NDA2MjIzODQzODEyNzciLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNTgxNjE1MTA1MTg0Mjc5Mzc4MCIsImltYWdlRG9jaWQiOiIxOTMwNTA1NDYxNjY1NTQzNTM3IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNzA1MzMxNDE1MDMzMTMyMTUwNCIsIm1pZCI6IjU3NjQ2Mjg2MDAyMjA2NTMzNyIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ==",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTYyODI5NDA2MjIzODQzODEyNzciLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNTgxNjE1MTA1MTg0Mjc5Mzc4MCIsImltYWdlRG9jaWQiOiIxOTMwNTA1NDYxNjY1NTQzNTM3IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNzA1MzMxNDE1MDMzMTMyMTUwNCIsIm1pZCI6IjU3NjQ2Mjg2MDAyMjA2NTMzNyIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ%3D%3D",
+      "product_id": "16282940622384381277",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=16282940622384381277"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTyre_iFWiDHYgpyjwGxN3FUf-LTJJPfhqDKwf1mHGwNWgI8JQxf3_xgFLyahI7zBbgxu0h6y8py83JEigEk1HkMCj_mLKNrYBWGu2442LI_yhzCjvpmiW1RQ",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRp1uxJqIc3iy-HaVyBbNu-2vueIBwm5uVhwceHAWTiF-6GcyheSv7splsuKfhmeP0He5ZUrtw0q2NbmNdDPqnLp5GcqlZcgjqYIi_BSg",
+      "source": "Urbanstar",
+      "title": "Herren EDWIN Regular Tapered Jeans",
+      "price": "77,50 €",
+      "extracted_price": 77.5,
+      "original_price": "155 €",
+      "extracted_original_price": 155,
+      "extensions": [
+        "SALE"
+      ],
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTUxOTM5MTIyODU2NDU2NzQ3NzciLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNzU5ODU4NzM5OTQzNTI1ODIyOSIsImltYWdlRG9jaWQiOiIxMDc3NjExMjQzNjIwMTY2NTU0NSIsInJkcyI6IiIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTcyMTQ4ODU1ODU5ODc4OTg2MzUiLCJtaWQiOiI1NzY0NjI4MTQ0NDkyNTY2NjkiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTUxOTM5MTIyODU2NDU2NzQ3NzciLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNzU5ODU4NzM5OTQzNTI1ODIyOSIsImltYWdlRG9jaWQiOiIxMDc3NjExMjQzNjIwMTY2NTU0NSIsInJkcyI6IiIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTcyMTQ4ODU1ODU5ODc4OTg2MzUiLCJtaWQiOiI1NzY0NjI4MTQ0NDkyNTY2NjkiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "15193912285645674777",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=15193912285645674777"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSj7wkq8uQB6YSSAC7VndxAeH8cSvMqNkBLJt1A-jnodCWbSUPOjGwVoFFfmYR6GztWnNtQ92zN_4AjtE287FV_YSA7y9aON-T_MwFuToHuVtwZNxyXh_GJ-g",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcR1xENbDEk0ft3CGktnbE_5SWOPvokvUDJF28CBm38y7083fCBGAcxV_6Bdt16m78YSYiUq6AqkQw8GCz7xeQDYUsN4_u-91aX1PCaqQnQ",
+      "source": "Classic Kontor",
+      "title": "Edwin Regular Tapered 13,5oz Rainbow Selvage",
+      "price": "189,00 €",
+      "extracted_price": 189,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTU0NDU5NTYyMDY0OTMzNzM5NDkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMjEzNjQ4NTMyNjI4NjkxODA4OSIsImltYWdlRG9jaWQiOiI1MTQ2MjIyMDIzMzQ2MzM1NTIxIiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiI4MjQ5NzgyMTI1MzE5MTU4MzA3IiwibWlkIjoiNTc2NDYyODUxNjc2NjU0MDUxIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTU0NDU5NTYyMDY0OTMzNzM5NDkiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMjEzNjQ4NTMyNjI4NjkxODA4OSIsImltYWdlRG9jaWQiOiI1MTQ2MjIyMDIzMzQ2MzM1NTIxIiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiI4MjQ5NzgyMTI1MzE5MTU4MzA3IiwibWlkIjoiNTc2NDYyODUxNjc2NjU0MDUxIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "15445956206493373949",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=15445956206493373949"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRM7B1IOjBHKHo8LLHQVlNjFm_9sa7wQatddUZ4-65iUDPenlwfEHO2ezXNAvEHyxR9d6Z36LOhZjD2_WPJApe7IuDVXfYmLSZSQryqQebs5dHnYSQVP7gO",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSv2e-uKdKi_YdmS9XKpvAw6et6DUPXl3Zlau8rIscZBiKwT1UxEH5DPWsyNEnR-UY8n8rnOn-2U9qouZFB-NhYoioqLteG",
+      "source": "Zalando",
+      "title": "Herren Edwin Regular Tapered Jeans",
+      "price": "140,00 €",
+      "extracted_price": 140,
+      "original_price": "200 €",
+      "extracted_original_price": 200,
+      "extensions": [
+        "SALE"
+      ],
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjAzNDA0OTY1NDY5MTA4NjIwNyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMzODg2NjQ4NjU2ODA4ODUzMjMiLCJpbWFnZURvY2lkIjoiMTIxODM4NzI2NDE5ODgzNjAzMzMiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjEyMzMzODUzMDE1MjMxNjU1MDI2IiwibWlkIjoiNTc2NDYyODEzODM4Mjg1NDQ5IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjAzNDA0OTY1NDY5MTA4NjIwNyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMzODg2NjQ4NjU2ODA4ODUzMjMiLCJpbWFnZURvY2lkIjoiMTIxODM4NzI2NDE5ODgzNjAzMzMiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjEyMzMzODUzMDE1MjMxNjU1MDI2IiwibWlkIjoiNTc2NDYyODEzODM4Mjg1NDQ5IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "2034049654691086207",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=2034049654691086207"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSyH4M7yErhshi3tIPXmuaIukxGgoujH-9RUXSimbCCzxkeXn7N3JPedWjTqbzUTDChELUwmaH2wK718k1AhL5zqCDI6niP0S2Lx0ytta3uQ0rNWmOhWz-rPQ",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQDIGL_atkQTQwZUiMN921sXv-LRt-rgMxLz62YMTVIHTTfzkzoJxmVZqtyUf2OvYlhonwQEuIa73eOKU_6HpBviodtJm0_G_PPKQ",
+      "source": "arnoldsvienna.com",
+      "title": "Edwin Loose Jeans Relaxed Fit Herren",
+      "price": "130,00 €",
+      "extracted_price": 130,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTE2MTE4MDg5NzI0NDQyNDk3MDciLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMjM5MzQ0MTIwODAwMDU1NzYyNCIsImltYWdlRG9jaWQiOiIxNjA4ODc4NTYwNjM1MDM1MzI2NCIsInJkcyI6IiIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTIzOTM3NDExNjQ5NzUwNTUwNDYiLCJtaWQiOiI1NzY0NjI4MDg1NTMyOTM4NjMiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTE2MTE4MDg5NzI0NDQyNDk3MDciLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxMjM5MzQ0MTIwODAwMDU1NzYyNCIsImltYWdlRG9jaWQiOiIxNjA4ODc4NTYwNjM1MDM1MzI2NCIsInJkcyI6IiIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTIzOTM3NDExNjQ5NzUwNTUwNDYiLCJtaWQiOiI1NzY0NjI4MDg1NTMyOTM4NjMiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "11611808972444249707",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=11611808972444249707"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQPi4mZH47f3RFq1lZYFZYWxCYfTPv1hxPByTH65kZzM3gKnmQRTpOm1QwPfxSsjmoQKQ0f1mEkp78CcOoiItGLu4p4aR10ty-4_SnJY2JUKVk4jYNvSjRa2g",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTpZ5z5VhlI_yMIqJ1zHEmLfdbSvfaMnFsWRzzaVUy_x1CL9vhWP8B66_u_2oEHSUC1y9aRVcaw9_vgVKVv_NbP4TCDNmc1gz-m",
+      "source": "EDWIN",
+      "title": "Edwin Regular Chino",
+      "rating": 4.4,
+      "reviews": 5,
+      "price": "78,00 €",
+      "extracted_price": 78,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODgyMjc4NTU5MjI1Nzk3NzQ5MCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMxNTc1NzAwNzY2NzQwNzQzNTciLCJpbWFnZURvY2lkIjoiNjQ0MDYxMTU5NTU5MzA1ODY5MyIsInJkcyI6IlBDXzE5OTE5Nzg1OTgzNjMzNDU3MDJ8UFJPRF9QQ18xOTkxOTc4NTk4MzYzMzQ1NzAyIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxOTkxOTc4NTk4MzYzMzQ1NzAyIiwibWlkIjoiNTc2NDYyNzg0MzQwNzkxMzYxIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiODgyMjc4NTU5MjI1Nzk3NzQ5MCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMxNTc1NzAwNzY2NzQwNzQzNTciLCJpbWFnZURvY2lkIjoiNjQ0MDYxMTU5NTU5MzA1ODY5MyIsInJkcyI6IlBDXzE5OTE5Nzg1OTgzNjMzNDU3MDJ8UFJPRF9QQ18xOTkxOTc4NTk4MzYzMzQ1NzAyIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxOTkxOTc4NTk4MzYzMzQ1NzAyIiwibWlkIjoiNTc2NDYyNzg0MzQwNzkxMzYxIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "8822785592257977490",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=8822785592257977490"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQuxGD--AjPEIcNseSXmfGrWgENlEd3pTERVdjH8rirQoPFj3ZXfx1aZzszdCmj-JrSw-I2h6l7bAE6pkBJRNcmzGXpxNtPPvKNvRyrv56JY8iw0j7UVl-b",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSv2e-uKdKi_YdmS9XKpvAw6et6DUPXl3Zlau8rIscZBiKwT1UxEH5DPWsyNEnR-UY8n8rnOn-2U9qouZFB-NhYoioqLteG",
+      "source": "Zalando",
+      "title": "Edwin Jeans Tapered Fit Herren",
+      "price": "154,95 €",
+      "extracted_price": 154.95,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDIwMjc5NDI4NjcwOTkxMTc5NCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjYwMzc2NDczMjE2MjYyMTEzMDkiLCJpbWFnZURvY2lkIjoiMTA5MzI2NDYyNDUxNjQ1MjE1NzAiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjExMzU1NjU0NTM3NDg0MjkyNDMwIiwibWlkIjoiNTc2NDYyODE2NTMyOTQ0NTI4IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNDIwMjc5NDI4NjcwOTkxMTc5NCIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjYwMzc2NDczMjE2MjYyMTEzMDkiLCJpbWFnZURvY2lkIjoiMTA5MzI2NDYyNDUxNjQ1MjE1NzAiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjExMzU1NjU0NTM3NDg0MjkyNDMwIiwibWlkIjoiNTc2NDYyODE2NTMyOTQ0NTI4IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "4202794286709911794",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=4202794286709911794"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR60eS8c1v8Tr8SbyZUKiTJ3dwLTgviJA-tNpIBESek1vrLCJUkCI94Kske2FqONoefAnm2r1bf9UFdU8cRhXdXftody36JkA2VPT1DoNWpfSiKdyf8_QcS",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSRwE9fqNGEG7i3DOuUu54cFvU9G6qo0J2_dqBrgfSkw5RO885sDVePkccKxeT2fOu9YrvlwRWSvITo8XAN32F8q5RWhOzBgWE",
+      "source": "ZebraClub Berlin",
+      "title": "Edwin Jeans ED-55 Yoshiko Left Hand",
+      "price": "139,00 €",
+      "extracted_price": 139,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzU3Njg2ODE0ODI2NjY4MDEwNSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjY0Mzk0MDE0OTMxOTAxMTc0OTkiLCJpbWFnZURvY2lkIjoiNzUwMDY5MjY4Njc2NDQ0ODE3NyIsInJkcyI6IiIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzU3Njg2ODE0ODI2NjY4MDEwNSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjY0Mzk0MDE0OTMxOTAxMTc0OTkiLCJpbWFnZURvY2lkIjoiNzUwMDY5MjY4Njc2NDQ0ODE3NyIsInJkcyI6IiIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiIiwibWlkIjoiIiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "7576868148266680105",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=7576868148266680105"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR14o_Bt_Z_6T0mIp4HursdvMsxGXEuKwd8mqC_38yFxjSW3BmprkKNJfr-Is56heF__4k-U9-gsbl0Ukj6ukhsJChOrAlWKfb59jYQfsBeB2Q8XDYvFMhL",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTpZ5z5VhlI_yMIqJ1zHEmLfdbSvfaMnFsWRzzaVUy_x1CL9vhWP8B66_u_2oEHSUC1y9aRVcaw9_vgVKVv_NbP4TCDNmc1gz-m",
+      "source": "EDWIN",
+      "title": "Edwin Jaga Loose Pant",
+      "rating": 2.8,
+      "reviews": 4,
+      "price": "65,00 €",
+      "extracted_price": 65,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTM0MjkzNjU1MTAyODA5MzY5NjIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI4NTU5MjgzMzc2MTgxOTk3ODUyIiwiaW1hZ2VEb2NpZCI6IjE0MTIyMjUyMzg2Mzk3NjY5MTQ4IiwicmRzIjoiUENfMTU2NzI0Nzk0NjQ2MTg3MjI5MTd8UFJPRF9QQ18xNTY3MjQ3OTQ2NDYxODcyMjkxNyIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTU2NzI0Nzk0NjQ2MTg3MjI5MTciLCJtaWQiOiI1NzY0NjI3MDI0MTE5NjYzNjUiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTM0MjkzNjU1MTAyODA5MzY5NjIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI4NTU5MjgzMzc2MTgxOTk3ODUyIiwiaW1hZ2VEb2NpZCI6IjE0MTIyMjUyMzg2Mzk3NjY5MTQ4IiwicmRzIjoiUENfMTU2NzI0Nzk0NjQ2MTg3MjI5MTd8UFJPRF9QQ18xNTY3MjQ3OTQ2NDYxODcyMjkxNyIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTU2NzI0Nzk0NjQ2MTg3MjI5MTciLCJtaWQiOiI1NzY0NjI3MDI0MTE5NjYzNjUiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "13429365510280936962",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=13429365510280936962"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT-xEdqFB2EFRNP_SEh-yQIkm3r9bRlcSNm0EQ0Ni_hyaX7IbCQCEbZUrZ7br7TkaMOwF3tRId_d3aGgVOnwUK3_d0yir5xlJNJ7v_ctIp8be_h7ohIOEnLZQ",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTpZ5z5VhlI_yMIqJ1zHEmLfdbSvfaMnFsWRzzaVUy_x1CL9vhWP8B66_u_2oEHSUC1y9aRVcaw9_vgVKVv_NbP4TCDNmc1gz-m",
+      "source": "EDWIN",
+      "title": "Edwin Staff Uniform Tyrell Pant",
+      "price": "130,00 €",
+      "extracted_price": 130,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTcyNjk4MDcxNzM5MzA1NjY4MzAiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI3NzY0NTk5NjEwMjY3Nzc5MTE2IiwiaW1hZ2VEb2NpZCI6IjUwMDYyNDg2NzQxNDg1NDQ4OTkiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjEzNjQ1NTc1NTA3Njk3MDY5OTExIiwibWlkIjoiNTc2NDYyODEzNDU5NDQxMzE1IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTcyNjk4MDcxNzM5MzA1NjY4MzAiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI3NzY0NTk5NjEwMjY3Nzc5MTE2IiwiaW1hZ2VEb2NpZCI6IjUwMDYyNDg2NzQxNDg1NDQ4OTkiLCJyZHMiOiIiLCJxdWVyeSI6ImVkd2luJTJCcGFudHMiLCJncGNpZCI6IjEzNjQ1NTc1NTA3Njk3MDY5OTExIiwibWlkIjoiNTc2NDYyODEzNDU5NDQxMzE1IiwicHZ0IjoiYSIsInV1bGUiOm51bGx9",
+      "product_id": "17269807173930566830",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=17269807173930566830"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS8AF0ikgnowBIRk-3iQmmo5ehZjJf5uBMniMXf2BwvphlJ_MkN_4rjNrkl8kIGpjtIaV7490B14e_jSwCpf46cgJhwNMrkk4qRN47NCvSrFMQTX9y2otXh6g",
+      "source_logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQyMgiBbS_rOCrME1wSgqke3KLAwoqAlgcGGaS5KvG-Dnbk_GGDT0xsXt1LSwJnIY1fPSZ9JrhfkT1dWJ0-E4tX5Xd_edrsmbhc8g",
+      "source": "Mey & Edlich",
+      "title": "Edwin Jeans Kurabo",
+      "rating": 4.6,
+      "reviews": 10,
+      "price": "185,00 €",
+      "extracted_price": 185,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTQwMzU5MDI4NjYzMzk5Nzc1NyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE0OTQyMjc0MjUzNTU3Nzg2NjMwIiwiaW1hZ2VEb2NpZCI6IjE3MjcyMzU0MTUyMzUyODYxNDIwIiwicmRzIjoiUENfMTIzMjM1OTQ0MDc2MTU0NTg4OTB8UFJPRF9QQ18xMjMyMzU5NDQwNzYxNTQ1ODg5MCIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTIzMjM1OTQ0MDc2MTU0NTg4OTAiLCJtaWQiOiI1NzY0NjI4MTY2MzE3MzkyMDQiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0=",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTQwMzU5MDI4NjYzMzk5Nzc1NyIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjE0OTQyMjc0MjUzNTU3Nzg2NjMwIiwiaW1hZ2VEb2NpZCI6IjE3MjcyMzU0MTUyMzUyODYxNDIwIiwicmRzIjoiUENfMTIzMjM1OTQ0MDc2MTU0NTg4OTB8UFJPRF9QQ18xMjMyMzU5NDQwNzYxNTQ1ODg5MCIsInF1ZXJ5IjoiZWR3aW4lMkJwYW50cyIsImdwY2lkIjoiMTIzMjM1OTQ0MDc2MTU0NTg4OTAiLCJtaWQiOiI1NzY0NjI4MTY2MzE3MzkyMDQiLCJwdnQiOiJhIiwidXVsZSI6bnVsbH0%3D",
+      "product_id": "5403590286633997757",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=5403590286633997757"
+    },
+    {
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTmH0baQXRYS-DT1dsU6fAhr5K6cSzrJW4TN5gQHLLVV-0uLlojaapsksIWLlm2qUZCUkCdSoyGJyYm-QAg2lOwQRp3tzvYqdcdYLyngy07h44puJUavGCM",
+      "source_logo": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTpZ5z5VhlI_yMIqJ1zHEmLfdbSvfaMnFsWRzzaVUy_x1CL9vhWP8B66_u_2oEHSUC1y9aRVcaw9_vgVKVv_NbP4TCDNmc1gz-m",
+      "source": "EDWIN",
+      "title": "Herren Edwin Labour Dart Pant",
+      "price": "78,00 €",
+      "extracted_price": 78,
+      "immersive_product_page_token": "eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5NDU0MDI2MzE4OTMzNDg3MzgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI3MDkzMzUyMjcwMDkwNzY4MzM5IiwiaW1hZ2VEb2NpZCI6IjEyNDk3MzQ2Mjg3NDY2NTMwNDA0IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNzAyMjQwMzI5NTkzNzAwNzMyNyIsIm1pZCI6IjU3NjQ2Mjc5NDc2NDEwMzQ3OCIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ==",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik5XTERaNjZuRHZieWtQSVBuOGJieVFFIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5NDU0MDI2MzE4OTMzNDg3MzgiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiI3MDkzMzUyMjcwMDkwNzY4MzM5IiwiaW1hZ2VEb2NpZCI6IjEyNDk3MzQ2Mjg3NDY2NTMwNDA0IiwicmRzIjoiIiwicXVlcnkiOiJlZHdpbiUyQnBhbnRzIiwiZ3BjaWQiOiIxNzAyMjQwMzI5NTkzNzAwNzMyNyIsIm1pZCI6IjU3NjQ2Mjc5NDc2NDEwMzQ3OCIsInB2dCI6ImEiLCJ1dWxlIjpudWxsfQ%3D%3D",
+      "product_id": "16945402631893348738",
+      "serpapi_product_api": "https://serpapi.com/search.json?engine=google_product&gl=de&google_domain=google.com&hl=de&product_id=16945402631893348738"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Was ist Edwin für eine Marke?",
+      "snippet": "Edwin ist der japanische Denim-Pionier. Anfangs noch als Importeur amerikanischer Marken entwickelte Herr Tsunemi die Idee der eigenen Fertigung. Als erste Marke produzierte Edwin den Denim in Japan und legte den Grundstein für viele nachfolgende Denimhersteller.",
+      "title": "Edwin - Established in Japan 1947 - Classic Kontor",
+      "link": "https://classic-kontor.com/brands/edwin/#:~:text=Edwin%20ist%20der%20japanische%20Denim,Grundstein%20f%C3%BCr%20viele%20nachfolgende%20Denimhersteller.",
+      "displayed_link": "https://classic-kontor.com › brands › edwin",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BE0j0iRweK4QJUdXYEj7cVkjOstq58iqfC5fua--&s",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiV2FzIGlzdCBFZHdpbiBmw7xyIGVpbmUgTWFya2U/IiwibGsiOiJHaDEzWVhNZ2FYTjBJR1ZrZDJsdUlHYkR2SElnWldsdVpTQnRZWEpyWlEiLCJicyI6ImMtTnk0WklMVHl4V3lDd3VVWEJOS2NfTVUwZzd2S2RJSVRVekwxWEJON0VvTzlWZTRweTdrYnlVYkRsVVVTcWFvbHlRSWk0ckxzbnd6RlNGOU5JU2hlTE12QlNvVVY2cGlYbkY5aElYZEl5a3BDVEtrZVVocG1TQjVMbTh1WlNDRVhxQ0Vzc2gtaFNLRV9QUzhvc3lpek5UaTByc0pUcjlqSlNrNUJLTFVxRjZpNERxc3BEVlZhV21hREJ3MlhCSmhlY3JGQlRscDVSV2dUU2l1cVF6MkVoYVNySWNSUUdTVXdRWUFRIiwiaWQiOiJmY19OV0xEWjY2bkR2YnlrUElQbjhiYnlRRV8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiV2FzIGlzdCBFZHdpbiBmw7xyIGVpbmUgTWFya2U%2FIiwibGsiOiJHaDEzWVhNZ2FYTjBJR1ZrZDJsdUlHYkR2SElnWldsdVpTQnRZWEpyWlEiLCJicyI6ImMtTnk0WklMVHl4V3lDd3VVWEJOS2NfTVUwZzd2S2RJSVRVekwxWEJON0VvTzlWZTRweTdrYnlVYkRsVVVTcWFvbHlRSWk0ckxzbnd6RlNGOU5JU2hlTE12QlNvVVY2cGlYbkY5aElYZEl5a3BDVEtrZVVocG1TQjVMbTh1WlNDRVhxQ0Vzc2gtaFNLRV9QUzhvc3lpek5UaTByc0pUcjlqSlNrNUJLTFVxRjZpNERxc3BEVlZhV21hREJ3MlhCSmhlY3JGQlRscDVSV2dUU2l1cVF6MkVoYVNySWNSUUdTVXdRWUFRIiwiaWQiOiJmY19OV0xEWjY2bkR2YnlrUElQbjhiYnlRRV8xIn0%3D"
+    },
+    {
+      "question": "Wie gut sind Edwin Jeans?",
+      "snippet": "Edwin Jeans ist eine hochwertige und langlebige Marke für Jeanshosen. Die Marke wurde 1947 in Japan gegründet und bietet ein breites Sortiment an modischen und bequemen Jeans für Männer und Frauen an. Die Jeans sind aus hochwertigen Materialien hergestellt und sehr langlebig.",
+      "title": "Ist edwin jeans eine gute marke und wie ist die gebotene qualität?",
+      "date": "15.04.2024",
+      "link": "https://arnoldsvienna.com/blogs/blog/ist-edwin-jeans-eine-gute-marke-und-wie-ist-die-gebotene-qualitat#:~:text=Edwin%20Jeans%20ist%20eine%20hochwertige,Materialien%20hergestellt%20und%20sehr%20langlebig.",
+      "displayed_link": "https://arnoldsvienna.com › blogs › blog › ist-edwin-jean...",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ef8a34f5a46c1372d4ac786a26912e8c395f40cd121df4feb23d82346da9be3b.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiV2llIGd1dCBzaW5kIEVkd2luIEplYW5zPyIsImxrIjoiR2hoM2FXVWdaM1YwSUhOcGJtUWdaV1IzYVc0Z2FtVmhibk0iLCJicyI6ImMtTnk0WklMVHl4V3lDd3VVWEJOS2NfTVUwZzd2S2RJSVRVekwxWEJON0VvTzlWZTRweTdrYnlVYkRsVVVTcWFvbHlRSWk0ckxzbnd6RlNGOU5JU2hlTE12QlNvVVY2cGlYbkY5aElYZEl5a3BDVEtrZVVocG1TQjVMbTh1WlNDRVhxQ0Vzc2gtaFNLRV9QUzhvc3lpek5UaTByc0pUcjlqSlNrNUJLTFVxRjZpNERxc3BEVlZhV21hREJ3MlhCSmhlY3JGQlRscDVSV2dUU2l1cVF6MkVoYVNySWNSUUdTVXdRWUFRIiwiaWQiOiJmY19OV0xEWjY2bkR2YnlrUElQbjhiYnlRRV8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiV2llIGd1dCBzaW5kIEVkd2luIEplYW5zPyIsImxrIjoiR2hoM2FXVWdaM1YwSUhOcGJtUWdaV1IzYVc0Z2FtVmhibk0iLCJicyI6ImMtTnk0WklMVHl4V3lDd3VVWEJOS2NfTVUwZzd2S2RJSVRVekwxWEJON0VvTzlWZTRweTdrYnlVYkRsVVVTcWFvbHlRSWk0ckxzbnd6RlNGOU5JU2hlTE12QlNvVVY2cGlYbkY5aElYZEl5a3BDVEtrZVVocG1TQjVMbTh1WlNDRVhxQ0Vzc2gtaFNLRV9QUzhvc3lpek5UaTByc0pUcjlqSlNrNUJLTFVxRjZpNERxc3BEVlZhV21hREJ3MlhCSmhlY3JGQlRscDVSV2dUU2l1cVF6MkVoYVNySWNSUUdTVXdRWUFRIiwiaWQiOiJmY19OV0xEWjY2bkR2YnlrUElQbjhiYnlRRV8xIn0%3D"
+    },
+    {
+      "question": "Sind Edwin Raw Jeans sanforisiert?",
+      "snippet": "Genauer gesagt fragen uns unsere Kunden regelmäßig, wie die verschiedenen Stile im Vergleich zueinander abschneiden. Die meisten Jeans von Edwin sind sanforisiert , daher ist mit minimalem Einlaufen beim Waschen zu rechnen.",
+      "title": "Edwin Jeans Passform-Ratgeber - Fat Buddha Store",
+      "link": "https://translate.google.com/translate?u=https://www.fatbuddhastore.com/edwin-jeans-fit-guide-i193&hl=de&sl=en&tl=de&client=rq&prev=search#:~:text=More%20specifically%2C%20our%20customers%20regularly,expect%20minimal%20shrinkage%20when%20washing.",
+      "displayed_link": "https://www.fatbuddhastore.com › edwin-jeans-fit-guide-...",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2cTf3egvV_GqIp9fua3ly1SmZViVuLHyKUIs56ILs&s",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ef8a34f5a46c1372d4ac786a26912e8c7e2018ce44c79f460a9b94d01e7a6730.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiU2luZCBFZHdpbiBSYXcgSmVhbnMgc2FuZm9yaXNpZXJ0PyIsImxrIjoiR2g1aGNtVWdaV1IzYVc0Z2NtRjNJR3BsWVc1eklITmhibVp2Y21sNlpXUW9BQSIsImJzIjoiYy1OeTRaSUxUeXhXeUN3dVVYQk5LY19NVTBnN3ZLZElJVFV6TDFYQk43RW9POVZlNHB5N2tieVViRGxVVVNxYW9seVFJaTRyTHNud3pGU0Y5TklTaGVMTXZCU29VVjZwaVhuRjloSVhkSXlrcENUS2tlVWhwbVNCNUxtOHVaU0NFWHFDRXNzaC1oU0tFX1BTOG9zeWl6TlRpMHJzSlRyOWpKU2s1QktMVXFGNmk0RHFzcERWVmFXbWFEQncyWEJKaGVjckZCVGxwNVJXZ1RTaXVxUXoyRWhhU3JJY1JRR1NVd1FZQVEiLCJpZCI6ImZjX05XTERaNjZuRHZieWtQSVBuOGJieVFFXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiU2luZCBFZHdpbiBSYXcgSmVhbnMgc2FuZm9yaXNpZXJ0PyIsImxrIjoiR2g1aGNtVWdaV1IzYVc0Z2NtRjNJR3BsWVc1eklITmhibVp2Y21sNlpXUW9BQSIsImJzIjoiYy1OeTRaSUxUeXhXeUN3dVVYQk5LY19NVTBnN3ZLZElJVFV6TDFYQk43RW9POVZlNHB5N2tieVViRGxVVVNxYW9seVFJaTRyTHNud3pGU0Y5TklTaGVMTXZCU29VVjZwaVhuRjloSVhkSXlrcENUS2tlVWhwbVNCNUxtOHVaU0NFWHFDRXNzaC1oU0tFX1BTOG9zeWl6TlRpMHJzSlRyOWpKU2s1QktMVXFGNmk0RHFzcERWVmFXbWFEQncyWEJKaGVjckZCVGxwNVJXZ1RTaXVxUXoyRWhhU3JJY1JRR1NVd1FZQVEiLCJpZCI6ImZjX05XTERaNjZuRHZieWtQSVBuOGJieVFFXzEifQ%3D%3D"
+    },
+    {
+      "question": "Wo produziert Edwin Jeans?",
+      "snippet": "Im Stadtteil Nippori produziert das japanische Label hochwertige Jeans – und das schon seit 1961. Die Marke prägt ein progressiver Mix aus Japans traditioneller Handwerkskunst und Europas zeitgenössischem Innovationsstreben.",
+      "title": "Ausgewählte Einzelstücke von EDWIN - Mey & Edlich",
+      "link": "https://www.mey-edlich.de/edwin/c/64.49#:~:text=Im%20Stadtteil%20Nippori%20produziert%20das,Handwerkskunst%20und%20Europas%20zeitgen%C3%B6ssischem%20Innovationsstreben.",
+      "displayed_link": "https://www.mey-edlich.de › edwin",
+      "source_logo": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/ef8a34f5a46c1372d4ac786a26912e8c45519cd7e382fe16ad2c4c37f9e5b7bb.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiV28gcHJvZHV6aWVydCBFZHdpbiBKZWFucz8iLCJsayI6IkdobDNieUJ3Y205a2RYcHBaWEowSUdWa2QybHVJR3BsWVc1eiIsImJzIjoiYy1OeTRaSUxUeXhXeUN3dVVYQk5LY19NVTBnN3ZLZElJVFV6TDFYQk43RW9POVZlNHB5N2tieVViRGxVVVNxYW9seVFJaTRyTHNud3pGU0Y5TklTaGVMTXZCU29VVjZwaVhuRjloSVhkSXlrcENUS2tlVWhwbVNCNUxtOHVaU0NFWHFDRXNzaC1oU0tFX1BTOG9zeWl6TlRpMHJzSlRyOWpKU2s1QktMVXFGNmk0RHFzcERWVmFXbWFEQncyWEJKaGVjckZCVGxwNVJXZ1RTaXVxUXoyRWhhU3JJY1JRR1NVd1FZQVEiLCJpZCI6ImZjX05XTERaNjZuRHZieWtQSVBuOGJieVFFXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalJVRTJOREZoTTBkd01VYzRXVWcxTWpoS1V6QlZORk5NY1RoMU0yeHRNM2MyTTFKQkxVZERUa3hYVXpKMExWTlhVRXRqVjFaNGNHNWlTRGRHT1dKMU5GZEdUV3BYUVdVeVJtZ3dRMjVyV0daNFMwSm5aVTQ0UVdWYVVSSVhUbGRNUkZvMk5tNUVkbUo1YTFCSlVHNDRZbUo1VVVVYUlrRkRSRmhNTkd0YVVuaE1ZVTVPV21kcGNGRm9NMlkzZVVGc2RtZHJOM2t4YlVFIiwiZmN2IjoiMyIsImVpIjoiTldMRFo2Nm5EdmJ5a1BJUG44YmJ5UUUiLCJxYyI6IkNndGxaSGRwYmlCd1lXNTBjeEFGZlZvN0p6OCIsInF1ZXN0aW9uIjoiV28gcHJvZHV6aWVydCBFZHdpbiBKZWFucz8iLCJsayI6IkdobDNieUJ3Y205a2RYcHBaWEowSUdWa2QybHVJR3BsWVc1eiIsImJzIjoiYy1OeTRaSUxUeXhXeUN3dVVYQk5LY19NVTBnN3ZLZElJVFV6TDFYQk43RW9POVZlNHB5N2tieVViRGxVVVNxYW9seVFJaTRyTHNud3pGU0Y5TklTaGVMTXZCU29VVjZwaVhuRjloSVhkSXlrcENUS2tlVWhwbVNCNUxtOHVaU0NFWHFDRXNzaC1oU0tFX1BTOG9zeWl6TlRpMHJzSlRyOWpKU2s1QktMVXFGNmk0RHFzcERWVmFXbWFEQncyWEJKaGVjckZCVGxwNVJXZ1RTaXVxUXoyRWhhU3JJY1JRR1NVd1FZQVEiLCJpZCI6ImZjX05XTERaNjZuRHZieWtQSVBuOGJieVFFXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Japanischer Selvedge-Denim, Jeans und Kleidung",
+      "link": "https://edwin-europe.com/de-de/?srsltid=AfmBOorSl41ekrjd2up8Dn2IR18DQM_RUuvLFDE0-gGotww9jfu4EXD5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://edwin-europe.com/de-de/%3Fsrsltid%3DAfmBOorSl41ekrjd2up8Dn2IR18DQM_RUuvLFDE0-gGotww9jfu4EXD5&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECBgQAQ",
+      "displayed_link": "https://edwin-europe.com › de-de",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7ab21d552b360e1b9fd8f4bf9b8b153d2d.jpeg",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7a47c48a740ce40afb4a6447bb0927a8a2.png",
+      "snippet": "Der offizielle EDWIN Europe Online-Shop bietet die größte Auswahl an EDWIN Jeans, Jacken und Kleidung für Männer und Frauen. Jetzt entdecken!",
+      "snippet_highlighted_words": [
+        "EDWIN Jeans, Jacken und Kleidung"
+      ],
+      "source": "EDWIN"
+    },
+    {
+      "position": 2,
+      "title": "Edwin Jeans für Herren online kaufen",
+      "link": "https://www.zalando.de/herrenbekleidung-jeans/edwin/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zalando.de/herrenbekleidung-jeans/edwin/&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECBYQAQ",
+      "displayed_link": "https://www.zalando.de › herrenbekleidung-jeans › edwin",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7a23e4b3683ab2d9fc65fa939111837677.jpeg",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7aa3f1f98b2363d03e4809876be5237250.png",
+      "snippet": "Neben der Boxershorts, ist es das Kleidungsstück der Männer für untenrum: Die Edwin Jeans für Herren | Der Weg zur Lieblingsjeans führt online über Zalando.",
+      "snippet_highlighted_words": [
+        "Edwin Jeans für Herren"
+      ],
+      "source": "Zalando"
+    },
+    {
+      "position": 3,
+      "title": "Edwin - Established in Japan 1947",
+      "link": "https://classic-kontor.com/brands/edwin/?srsltid=AfmBOoqnfjuQuylhR88taVJnIOxbOM0gp-0T1QDcuWF8YASEh8BuE6ZM",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://classic-kontor.com/brands/edwin/%3Fsrsltid%3DAfmBOoqnfjuQuylhR88taVJnIOxbOM0gp-0T1QDcuWF8YASEh8BuE6ZM&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECEsQAQ",
+      "displayed_link": "https://classic-kontor.com › brands › edwin",
+      "thumbnail": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7acfa919f4891c163d45bf8146cd78df8e.jpeg",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7a6b7afdaed1466c1e6635d25a514e6362.png",
+      "snippet": "EDWIN Wide Trousers - natural. Aus der exklusiven \"Made in Japan\"-Kollektion stammt EDWIN´s Wide Trousers. 139,00 € * 199,00 ...",
+      "snippet_highlighted_words": [
+        "EDWIN Wide Trousers"
+      ],
+      "source": "Classic Kontor"
+    },
+    {
+      "position": 4,
+      "title": "Edwin Jeans Kurabo",
+      "link": "https://www.mey-edlich.de/edwin-jeans-kurabo/p/24-0098",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mey-edlich.de/edwin-jeans-kurabo/p/24-0098&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECD4QAQ",
+      "displayed_link": "https://www.mey-edlich.de › ... › Neues im SALE",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx8sQdr3gVuShFu8MWMa0Uqo05QCnIRNSH26OV96dg5LFcUzWwkVt1&s",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7ac393ec2b9351d6ba576cbe2cfe2860fc.png",
+      "snippet": "Ehrliche Jeans mit guter Verarbeitung, angenehm zu tragen und gutem Schnitt. Im Bund fällt die Hose erstaunlich groß aus, was nicht stört, wenn man gerne einen ...",
+      "snippet_highlighted_words": [
+        "Ehrliche Jeans mit guter Verarbeitung, angenehm zu tragen und gutem Schnitt"
+      ],
+      "source": "Mey & Edlich"
+    },
+    {
+      "position": 5,
+      "title": "Edwin",
+      "link": "https://www.burgundschild.com/collections/edwin?srsltid=AfmBOoq6Si_E6yYHofeDW8PEIyy2uPnRPfXarg_oIRwvRSXBQ5tKta_j",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.burgundschild.com/collections/edwin%3Fsrsltid%3DAfmBOoq6Si_E6yYHofeDW8PEIyy2uPnRPfXarg_oIRwvRSXBQ5tKta_j&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECGQQAQ",
+      "displayed_link": "https://www.burgundschild.com › collections › edwin",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzob1_rhz0DD-RR3gqme41VCpFmXaazWT_KvIj_tyiARfMToKwW7_2&s",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7a68e54c486f2ebf4ed0f00c4653538fe0.png",
+      "snippet": "Bis heute bietet EDWIN mit seiner Kollektion, die mittlerweile auch japanischen Denim umfasst, ein außergewöhnliches Preis-Leistungs-Verhältnis. Filtern.",
+      "snippet_highlighted_words": [
+        "EDWIN"
+      ],
+      "source": "Burg & Schild"
+    },
+    {
+      "position": 6,
+      "title": "Edwin Jeans - Herrenbekleidung / Herrenmode",
+      "link": "https://www.amazon.de/Edwin-Jeans-Herrenbekleidung-Herrenmode/s?k=Edwin+Jeans&rh=n%3A1981298031",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.amazon.de/Edwin-Jeans-Herrenbekleidung-Herrenmode/s%3Fk%3DEdwin%2BJeans%26rh%3Dn%253A1981298031&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECDkQAQ",
+      "displayed_link": "https://www.amazon.de › Edwin-Jeans-Herrenbekleidun...",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJisCNut24_fE5JuwhlIx6cDEf4H9BdDO0Kf7LMXeDZmW9s3h9MDDT&s",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7aa7644d7b887723af7e0472a87b034825.png",
+      "snippet": "Levi's. Herren 505 Regular Fit Jeans. Jeans · 4,24,2 von 5 Sternen (40.851). 79,99 €79,99€. UVP: 90,00 €90,00€. GRATIS Lieferung Mo., 3. März.",
+      "snippet_highlighted_words": [
+        "Levi's. Herren 505 Regular Fit Jeans"
+      ],
+      "source": "Amazon.de"
+    },
+    {
+      "position": 7,
+      "title": "EDWIN - Denim & Apparel - Made In Japan",
+      "link": "https://www.solekitchen.de/brands/edwin/?srsltid=AfmBOopyK3xVdkUEq0Su7ODwf64hWGY5v1JvVaddgcYBP1BT2fyDwJ-I",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.solekitchen.de/brands/edwin/%3Fsrsltid%3DAfmBOopyK3xVdkUEq0Su7ODwf64hWGY5v1JvVaddgcYBP1BT2fyDwJ-I&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECDsQAQ",
+      "displayed_link": "https://www.solekitchen.de › ed...",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxNI1DnzRkNCAPVev08g8dODNES6x_RI8RsWc18Py_Fpas23XFCZx9&s",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7ac09cfc9d02ebc686e62e1262b3685f8d.png",
+      "snippet": "Premium Streetwear - Made In Japan | First Class Denim | Japanische Jeans Tradition | Minimalistischer Workwear Style inspiriert von Japanischen Designs und ...",
+      "snippet_highlighted_words": [
+        "Premium Streetwear - Made In Japan"
+      ],
+      "source": "Solekitchen"
+    },
+    {
+      "position": 8,
+      "title": "Edwin | Japanese Denim Brand",
+      "link": "https://www.craemerco.de/collections/marken-brands-edwin",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.craemerco.de/collections/marken-brands-edwin&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECE8QAQ",
+      "displayed_link": "https://www.craemerco.de › marken-brands-edwin",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOW-a2-_sdi8im-335oEX_RIn37w1RTJsTg-mpXG-f53rtnusIGQR&s",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7a8ebc8e493c6be0545c0295d027a39041.png",
+      "snippet": "EDWIN - Die Heimat des japanischen Denim. Hochwertiger japanischer Denim gilt als der beste, weil er auf alten Webstühlen gewebt und aus hochwertigen ...",
+      "snippet_highlighted_words": [
+        "EDWIN"
+      ],
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOW-a2-_sdi8im-335oEX_RIn37w1RTJsTg-mpXG-f53rtnusIGQR&s"
+      ],
+      "source": "Crämer & Co"
+    },
+    {
+      "position": 9,
+      "title": "Edwin Jeans - Japanisches Denim im Online Shop - Overkill",
+      "link": "https://www.overkillshop.com/de/collections/edwin?srsltid=AfmBOorwuOzOPxKVSFI6R_aOTgcxLCTejsxZ1L2nINOp7rg-6t3be1D2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.overkillshop.com/de/collections/edwin%3Fsrsltid%3DAfmBOorwuOzOPxKVSFI6R_aOTgcxLCTejsxZ1L2nINOp7rg-6t3be1D2&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQFnoECDoQAQ",
+      "displayed_link": "https://www.overkillshop.com › collections › edwin",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0oRHHooNThVTwFlrM1bUjukzCugUgGdng4rm5-JQYDXDqXiqX_UOB&s",
+      "favicon": "https://serpapi.com/searches/67c362346bee28303f13e7f1/images/b23f0b9f208075d759a55d836c8f4a7a29c7115fa16c61eb42cff616b89c6774.png",
+      "snippet": "Jeans von der japanischen Denimmarke Edwin sind perfekt um deinen Streetstylelook zu komplettieren. Finde hier die aktuellen Modelle im Online Shop.",
+      "snippet_highlighted_words": [
+        "Jeans von der japanischen Denimmarke Edwin"
+      ],
+      "source": "Overkill"
+    }
+  ],
+  "filters": [
+    {
+      "name": "Herren",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4j_LtudAcru3pLRgypj8MvqKpO8DPkV1ffmk7kruKjbPTI1hvQ0_wzFm1w30crT2CnVNiPDTo5_Fyh-e4CqIbfmKDQ-TKpve2uo-MClIJp4YudMjJ_RbEM00WnT7blr69p-FQbyiYePT7bs7BdfgYaQ-2n2pafwiEE-dpeVLitxlMXPFyw",
+        "q": "herren edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=herren+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4j_LtudAcru3pLRgypj8MvqKpO8DPkV1ffmk7kruKjbPTI1hvQ0_wzFm1w30crT2CnVNiPDTo5_Fyh-e4CqIbfmKDQ-TKpve2uo-MClIJp4YudMjJ_RbEM00WnT7blr69p-FQbyiYePT7bs7BdfgYaQ-2n2pafwiEE-dpeVLitxlMXPFyw&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIDxAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=herren+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRkkYKk8NiaSbOkRUcfMrm4j_LtudAcru3pLRgypj8MvqKpO8DPkV1ffmk7kruKjbPTI1hvQ0_wzFm1w30crT2CnVNiPDTo5_Fyh-e4CqIbfmKDQ-TKpve2uo-MClIJp4YudMjJ_RbEM00WnT7blr69p-FQbyiYePT7bs7BdfgYaQ-2n2pafwiEE-dpeVLitxlMXPFyw"
+    },
+    {
+      "name": "Damen",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR4W1nBID2LJumHB5iDqemQl-vVYade4UaJ006vMiF46XJsgisVA9PASnG7q9CNXFi09Dn5yvYyPYF_SAMzR-btEwbJHudrPxgTFZmZtiaG7UoZ2dGHL1Wl866KDpyxtTRrDFnIDNMOHUfxpnsd1pDj_JTGaUOdnCUHv-coivaAFa4dkk2BBN2wEWDpF4mVrCOus2i-Q",
+        "q": "damen edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=damen+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4W1nBID2LJumHB5iDqemQl-vVYade4UaJ006vMiF46XJsgisVA9PASnG7q9CNXFi09Dn5yvYyPYF_SAMzR-btEwbJHudrPxgTFZmZtiaG7UoZ2dGHL1Wl866KDpyxtTRrDFnIDNMOHUfxpnsd1pDj_JTGaUOdnCUHv-coivaAFa4dkk2BBN2wEWDpF4mVrCOus2i-Q&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIEhAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=damen+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4W1nBID2LJumHB5iDqemQl-vVYade4UaJ006vMiF46XJsgisVA9PASnG7q9CNXFi09Dn5yvYyPYF_SAMzR-btEwbJHudrPxgTFZmZtiaG7UoZ2dGHL1Wl866KDpyxtTRrDFnIDNMOHUfxpnsd1pDj_JTGaUOdnCUHv-coivaAFa4dkk2BBN2wEWDpF4mVrCOus2i-Q"
+    },
+    {
+      "name": "Man",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR-yh6q-Qm9tJwaxrUIpAS8670ZCgPiw0Lg_Xoh2dHq2vjWcUiaZ2kbPNa0OCxQQsOu14hjq02t_2up42lSmNvQ6wx35ZKBYBSUwvdDRZRQ1Nyw_G_zMW41IWXniq9JV0jUNvaHinsET4JvG2HyNbvuyZ_fiY",
+        "q": "man edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=man+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR-yh6q-Qm9tJwaxrUIpAS8670ZCgPiw0Lg_Xoh2dHq2vjWcUiaZ2kbPNa0OCxQQsOu14hjq02t_2up42lSmNvQ6wx35ZKBYBSUwvdDRZRQ1Nyw_G_zMW41IWXniq9JV0jUNvaHinsET4JvG2HyNbvuyZ_fiY&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIDRAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=man+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR-yh6q-Qm9tJwaxrUIpAS8670ZCgPiw0Lg_Xoh2dHq2vjWcUiaZ2kbPNa0OCxQQsOu14hjq02t_2up42lSmNvQ6wx35ZKBYBSUwvdDRZRQ1Nyw_G_zMW41IWXniq9JV0jUNvaHinsET4JvG2HyNbvuyZ_fiY"
+    },
+    {
+      "name": "Jeans",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR4W1nBID2LJumHB5iDqemQl-vVYade4UaJ006vMiF46WmqfCZjJeSU-VobrMSb6e6js0Q-tIzrYpGsA0gHF-RhUQCi7ZWgqiI96YulrkJnFkaOirzOa-EccmMeozTp1mIU632tsbpynec0ULvZrAyD4I-Z2rBy6F9lMQHE2Hgx8Zm3sK8xb4xLm0OwwpT9fXdpK_b_Q",
+        "q": "jeans edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=jeans+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4W1nBID2LJumHB5iDqemQl-vVYade4UaJ006vMiF46WmqfCZjJeSU-VobrMSb6e6js0Q-tIzrYpGsA0gHF-RhUQCi7ZWgqiI96YulrkJnFkaOirzOa-EccmMeozTp1mIU632tsbpynec0ULvZrAyD4I-Z2rBy6F9lMQHE2Hgx8Zm3sK8xb4xLm0OwwpT9fXdpK_b_Q&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIDBAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=jeans+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR4W1nBID2LJumHB5iDqemQl-vVYade4UaJ006vMiF46WmqfCZjJeSU-VobrMSb6e6js0Q-tIzrYpGsA0gHF-RhUQCi7ZWgqiI96YulrkJnFkaOirzOa-EccmMeozTp1mIU632tsbpynec0ULvZrAyD4I-Z2rBy6F9lMQHE2Hgx8Zm3sK8xb4xLm0OwwpT9fXdpK_b_Q"
+    },
+    {
+      "name": "Chinos & Khakis",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRPtuVj0u_OdllkxDbEQdhqoJ0b33ViztMZ7WMnak9ELuRHrY4Rx0dZa-VY3EwKvJ1PMyOYBwnHUeUVUsl8KmjIQUbbnqur-NgtWRJoXLEWqGsLpOs4FhXpMOYLlD5m5s_t8vLru7g1QT8zfjCK5mcrqLKulLDJe6sRmmuUjc62l4Ct7aHayAiB08tCLLnl8CR4_0qHMrdK_8tGvfim_g58-Gw28g",
+        "q": "chinos & khakis edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=chinos+%26+khakis+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRPtuVj0u_OdllkxDbEQdhqoJ0b33ViztMZ7WMnak9ELuRHrY4Rx0dZa-VY3EwKvJ1PMyOYBwnHUeUVUsl8KmjIQUbbnqur-NgtWRJoXLEWqGsLpOs4FhXpMOYLlD5m5s_t8vLru7g1QT8zfjCK5mcrqLKulLDJe6sRmmuUjc62l4Ct7aHayAiB08tCLLnl8CR4_0qHMrdK_8tGvfim_g58-Gw28g&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQICxAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=chinos+%26+khakis+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRPtuVj0u_OdllkxDbEQdhqoJ0b33ViztMZ7WMnak9ELuRHrY4Rx0dZa-VY3EwKvJ1PMyOYBwnHUeUVUsl8KmjIQUbbnqur-NgtWRJoXLEWqGsLpOs4FhXpMOYLlD5m5s_t8vLru7g1QT8zfjCK5mcrqLKulLDJe6sRmmuUjc62l4Ct7aHayAiB08tCLLnl8CR4_0qHMrdK_8tGvfim_g58-Gw28g"
+    },
+    {
+      "name": "Abendhosen",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRNZGV-tJ4hEUTVn7NU7dnyg9j4CJGdgFxZlGu5zGfr9sY2vei57irNX4qSqL_AOfgrEqORS4nPRMO47Yz5lWO9g_SgkGO2D_xaWN5zxr5TJRtvqVhwiQIf4G47eYDENnseBno_SMXzFDA5vK_4O3A_6Uq9LCNT4vJurQ9DzIX6Eaqd0dVRUOIj1LcIeGaqDcOGjA0ng",
+        "q": "abendhosen edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=abendhosen+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRNZGV-tJ4hEUTVn7NU7dnyg9j4CJGdgFxZlGu5zGfr9sY2vei57irNX4qSqL_AOfgrEqORS4nPRMO47Yz5lWO9g_SgkGO2D_xaWN5zxr5TJRtvqVhwiQIf4G47eYDENnseBno_SMXzFDA5vK_4O3A_6Uq9LCNT4vJurQ9DzIX6Eaqd0dVRUOIj1LcIeGaqDcOGjA0ng&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIchAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=abendhosen+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRNZGV-tJ4hEUTVn7NU7dnyg9j4CJGdgFxZlGu5zGfr9sY2vei57irNX4qSqL_AOfgrEqORS4nPRMO47Yz5lWO9g_SgkGO2D_xaWN5zxr5TJRtvqVhwiQIf4G47eYDENnseBno_SMXzFDA5vK_4O3A_6Uq9LCNT4vJurQ9DzIX6Eaqd0dVRUOIj1LcIeGaqDcOGjA0ng"
+    },
+    {
+      "name": "Shorts",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RRIuM809sakZkHUv2wx3-CalSu4qHgzFk5vBbD9ZUWBASrKJusbBI8b8SCSDwYlzC9dZBfOf1UKHLiaFa9zPS8sstLnDOhf3M8ta3tq7dtiKIP2pSCQ83_UU57Iktx88JwvuvyAGXENvOyLsm3tBFwBW6GTPf0lHyjlzDkTDxAHipJJITH",
+        "q": "shorts edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=shorts+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRIuM809sakZkHUv2wx3-CalSu4qHgzFk5vBbD9ZUWBASrKJusbBI8b8SCSDwYlzC9dZBfOf1UKHLiaFa9zPS8sstLnDOhf3M8ta3tq7dtiKIP2pSCQ83_UU57Iktx88JwvuvyAGXENvOyLsm3tBFwBW6GTPf0lHyjlzDkTDxAHipJJITH&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIbRAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=shorts+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRIuM809sakZkHUv2wx3-CalSu4qHgzFk5vBbD9ZUWBASrKJusbBI8b8SCSDwYlzC9dZBfOf1UKHLiaFa9zPS8sstLnDOhf3M8ta3tq7dtiKIP2pSCQ83_UU57Iktx88JwvuvyAGXENvOyLsm3tBFwBW6GTPf0lHyjlzDkTDxAHipJJITH"
+    },
+    {
+      "name": "Cordhosen",
+      "parameters": {
+        "uds": "ABqPDvztZD_Nu18FR6tNPw2cK_RR1QJVQZeCwVNc6nHyWFtze6Z1gXbFLVJEAP1NVtMU2PhQJhsRozbyO4SMrZkISJo3WbwZe-HXx0RkQBv0ozo7sfKOFvZZ8W2RUL9gVw0HAyhOnf3TwDVoqD9E_HIiWprq_tQGdgb5KlVsBJG3VNv8gMPf8_dZRPqq6C7-SAgwDe4P2mFZ",
+        "q": "cordhosen edwin pants"
+      },
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=cordhosen+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR1QJVQZeCwVNc6nHyWFtze6Z1gXbFLVJEAP1NVtMU2PhQJhsRozbyO4SMrZkISJo3WbwZe-HXx0RkQBv0ozo7sfKOFvZZ8W2RUL9gVw0HAyhOnf3TwDVoqD9E_HIiWprq_tQGdgb5KlVsBJG3VNv8gMPf8_dZRPqq6C7-SAgwDe4P2mFZ&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQxKsJegQIbhAB&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=cordhosen+edwin+pants&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RR1QJVQZeCwVNc6nHyWFtze6Z1gXbFLVJEAP1NVtMU2PhQJhsRozbyO4SMrZkISJo3WbwZe-HXx0RkQBv0ozo7sfKOFvZZ8W2RUL9gVw0HAyhOnf3TwDVoqD9E_HIiWprq_tQGdgb5KlVsBJG3VNv8gMPf8_dZRPqq6C7-SAgwDe4P2mFZ"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&udm=3&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQl6QLegUIOBDWAQ",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants",
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Edwin Jeans 80er",
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=Edwin+Jeans+80er&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ1QJ6BAhjEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=Edwin+Jeans+80er"
+    },
+    {
+      "block_position": 1,
+      "query": "Edwin Jeans deutschland",
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=Edwin+Jeans+deutschland&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ1QJ6BAhfEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=Edwin+Jeans+deutschland"
+    },
+    {
+      "block_position": 1,
+      "query": "Edwin Jeans Herren",
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=Edwin+Jeans+Herren&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ1QJ6BAheEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=Edwin+Jeans+Herren"
+    },
+    {
+      "block_position": 1,
+      "query": "Edwin baggy Jeans",
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=Edwin+baggy+Jeans&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ1QJ6BAhdEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=Edwin+baggy+Jeans"
+    },
+    {
+      "block_position": 1,
+      "query": "EDWIN Wide Pant",
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=EDWIN+Wide+Pant&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ1QJ6BAhbEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=EDWIN+Wide+Pant"
+    },
+    {
+      "block_position": 1,
+      "query": "Edwin Jeans 90er",
+      "link": "https://www.google.com/search?sca_esv=f5984c12db8fefe6&gl=de&hl=de&q=Edwin+Jeans+90er&sa=X&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ1QJ6BAhZEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=Edwin+Jeans+90er"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=10&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8NMDegQIBxAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=10&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=20&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=30&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAI",
+      "5": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=40&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAK",
+      "6": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=50&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAM",
+      "7": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=60&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAO",
+      "8": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=70&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAQ",
+      "9": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=80&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAS",
+      "10": "https://www.google.com/search?q=edwin%2Bpants&sca_esv=f5984c12db8fefe6&gl=de&hl=de&ei=NWLDZ66nDvbykPIPn8bbyQE&start=90&sa=N&sstk=Af40H4X8ABr42h1cUMzGwtXye60k_14Ejva8rKlN0aDoTBrwuJzx5HdfkbTQ0DoB2WuPiWXA2b_VJtbokOH82mJux08SxNkoTyU-Sg&ved=2ahUKEwjulaOK0emLAxV2OUQIHR_jNhkQ8tMDegQIBxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=de&google_domain=google.com&hl=de&num=10&q=edwin%2Bpants&start=90"
+    }
+  }
+}
