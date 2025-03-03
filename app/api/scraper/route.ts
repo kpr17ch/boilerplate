@@ -139,13 +139,21 @@ export async function POST(request: Request) {
       
       console.log(`${products.length} Produkte gefunden.`);
 
+      // Extrahierte Produkte auf max. 40 begrenzen
+      const limitedProducts = products.slice(0, 40);
+
+      console.log(`Vestiaire: ${products.length} Produkte gefunden, begrenzt auf ${limitedProducts.length}`);
+
       // Browser schließen
       await browser.close();
       browser = null;
       console.log('Browser geschlossen. Scraping abgeschlossen.');
 
       // Rückgabe der Ergebnisse
-      return NextResponse.json({ products });
+      return NextResponse.json({
+        searchTerm,
+        products: limitedProducts
+      });
 
     } catch (error) {
       console.error('Fehler beim Scrapen:', error);
@@ -250,7 +258,7 @@ async function extractProductsFromPage(page: Page): Promise<ProductData[]> {
 async function handleCookieBanner(page: Page): Promise<boolean> {
   try {
     // Warte kurz, damit der Cookie-Banner Zeit hat zu erscheinen
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
     
     // Spezifischer Selektor für den "Das ist OK"-Button im Vestiaire Cookie-Banner
     const vestiaireOkButton = '#popin_tc_privacy_button_2';
@@ -272,7 +280,7 @@ async function handleCookieBanner(page: Page): Promise<boolean> {
       });
       
       // Warte kurz, damit die Seite nach dem Schließen des Banners reagieren kann
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise(resolve => setTimeout(resolve, 500));
       return true;
     }
     

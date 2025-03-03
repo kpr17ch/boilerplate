@@ -29,10 +29,42 @@ interface VintedProduct {
   productUrl: string;
 }
 
+// Farfetch Produkt-Interface
+interface FarfetchProduct {
+  productId: string;
+  name: string;
+  brand: string;
+  price: string;
+  imageUrl: string;
+  productUrl: string;
+}
+
+// Perplexity Kategorisierungs-Interface
+interface PerplexityResult {
+  kategorie: string;
+  marke: string;
+  modellname: string;
+  farbe: string;
+  collaboration: string;
+}
+
+// Gemeinsames Produkt-Interface für die Ergebnisliste
+interface RankedProduct {
+  source: 'vestiaire' | 'vinted' | 'farfetch';
+  productId: string;
+  name: string;
+  brand: string;
+  price: string;
+  size?: string;
+  imageUrl: string;
+  productUrl: string;
+  condition?: string;
+}
+
 export async function POST(request: Request) {
   try {
     // Daten aus dem Request-Body extrahieren
-    const { originalQuery, vestiaireProducts, vintedProducts } = await request.json();
+    const { originalQuery, vestiaireProducts, vintedProducts, farfetchProducts, perplexityData } = await request.json();
 
     if (!originalQuery || typeof originalQuery !== 'string') {
       return NextResponse.json(
@@ -41,9 +73,16 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!Array.isArray(vestiaireProducts) || !Array.isArray(vintedProducts)) {
+    if (!Array.isArray(vestiaireProducts) || !Array.isArray(vintedProducts) || !Array.isArray(farfetchProducts)) {
       return NextResponse.json(
         { error: 'Produktlisten müssen Arrays sein' },
+        { status: 400 }
+      );
+    }
+
+    if (!perplexityData) {
+      return NextResponse.json(
+        { error: 'Perplexity-Kategorisierungsdaten sind erforderlich' },
         { status: 400 }
       );
     }
@@ -51,33 +90,40 @@ export async function POST(request: Request) {
     console.log(`Ranking-API aufgerufen mit Anfrage: "${originalQuery}"`);
     console.log(`Anzahl Vestiaire-Produkte: ${vestiaireProducts.length}`);
     console.log(`Anzahl Vinted-Produkte: ${vintedProducts.length}`);
+    console.log(`Anzahl Farfetch-Produkte: ${farfetchProducts.length}`);
+    console.log(`Perplexity-Kategorisierung:`, perplexityData);
 
-    // System-Prompt erstellen für die Bewertung der Produkte
-    const systemPrompt = `Du bist ein Experte für Mode und Shopping, der Produkte basierend auf Benutzeranfragen bewertet.
-    
-    Deine Aufgabe ist es, die Produkte von Vestiaire Collective und Vinted zu analysieren und die jeweils 4 besten Produkte pro Plattform auszuwählen, die am besten zur ursprünglichen Benutzeranfrage passen.
-    
-    Bei der Bewertung solltest du folgende Kriterien berücksichtigen:
-    1. Übereinstimmung der Marke, falls in der Anfrage genannt
-    2. Übereinstimmung des Modellnamens, falls in der Anfrage genannt
-    3. Übereinstimmung der Farbe, falls in der Anfrage genannt und Farbe irgendwo im Produktname enthalten ist
-    4. Übereinstimmung der Größe, falls in der Anfrage genannt bzw. möglichst nahe an der Größe der Anfrage
-    5. Allgemeine Relevanz zur Anfrage
-    
-    Gib die Produkte als JSON-Array zurück mit folgender Struktur:
-    {
-      "vestiaireProducts": [die IDs der 4 besten Vestiaire-Produkte als Zahlen],
-      "vintedProducts": [die IDs der 4 besten Vinted-Produkte als Zahlen]
-    }
-    
-    Beispiel:
-    {
-      "vestiaireProducts": [2, 5, 0, 8],
-      "vintedProducts": [1, 3, 7, 4]
-    }
-    
-    Falls weniger als 4 Produkte pro Plattform verfügbar sind, gib alle verfügbaren Produkte zurück.
-    Gib NUR das JSON zurück, keine zusätzlichen Erklärungen.`;
+    // System-Prompt erstellen für die Bewertung der Produkte basierend auf Perplexity-Kategorisierung
+const systemPrompt = `Du bist ein Experte für Mode und Shopping, der Produkte anhand detaillierter Suchkriterien bewertet.
+
+Deine Aufgabe ist es, Produkte von Vestiaire Collective, Vinted und Farfetch zu analysieren und zu bewerten, wie gut sie mit den folgenden, aus der Benutzeranfrage extrahierten Kriterien übereinstimmen:
+- Kategorie (z. B. Schuhe, Hose, Jacke, T-Shirt etc.)
+- Marke
+- Modellname
+- Farbe
+- Collaboration
+
+Hinweis: Die Produktdaten enthalten kein explizites Kategorie-Feld. Informationen zur Kategorie finden sich überwiegend im "name"-Attribut. Ist die Kategorie dort klar erkennbar, besitzt sie die höchste Priorität.
+
+Bewerte die Produkte anhand ihres Matching-Grades. Priorisiere vorrangig die Produkte, die den Kriterien am besten entsprechen. Unabhängig von der Quelle, sollten die Produkte in der Ausgabe immer absteigend nach ihrer Relevanz sortiert werden.
+
+Gewichtung:
+1. Übereinstimmung der Kategorie (basierend auf dem "name"-Attribut, höchste Priorität)
+2. Übereinstimmung der Marke
+3. Übereinstimmung des Modellnamens
+4. Übereinstimmung der Farbe
+5. Übereinstimmung der Collaboration-Informationen
+Gib die Produkte als EINZIGES JSON-Objekt zurück, das genau ein Property "products" enthält. Der Wert dieses Properties ist ein JSON-Array, das die Produkt-IDs und ihre Quelle in absteigender Reihenfolge der Relevanz enthält, beispielsweise:
+{
+  "products": [
+    {"source": "vestiaire", "id": 5235235},
+    {"source": "vinted", "id": 12321432},
+    {"source": "farfetch", "id": 4637634},
+    ...
+  ]
+}
+Begrenze die Ausgabe auf maximal 20 Produkte.
+Gib NUR das JSON-Objekt zurück, ohne zusätzliche Erklärungen.`;
 
     // Produkte für den Prompt vorbereiten
     const vestiaireProductsForPrompt = vestiaireProducts.map((product: VestiaireProduct, index: number) => ({
@@ -97,6 +143,13 @@ export async function POST(request: Request) {
       condition: product.condition
     }));
 
+    const farfetchProductsForPrompt = farfetchProducts.map((product: FarfetchProduct, index: number) => ({
+      id: index,
+      name: product.name,
+      brand: product.brand,
+      price: product.price
+    }));
+
     // Anfrage an OpenAI senden
     const response = await openai.chat.completions.create({
       model: 'gpt-4o',
@@ -104,13 +157,18 @@ export async function POST(request: Request) {
         { role: 'system', content: systemPrompt },
         { 
           role: 'user', 
-          content: `Benutzeranfrage: "${originalQuery}"
+          content: `
+          Perplexity Kategorisierung:
+          ${JSON.stringify(perplexityData, null, 2)}
           
           Vestiaire Collective Produkte:
           ${JSON.stringify(vestiaireProductsForPrompt, null, 2)}
           
           Vinted Produkte:
-          ${JSON.stringify(vintedProductsForPrompt, null, 2)}`
+          ${JSON.stringify(vintedProductsForPrompt, null, 2)}
+          
+          Farfetch Produkte:
+          ${JSON.stringify(farfetchProductsForPrompt, null, 2)}`
         }
       ],
       response_format: { type: "json_object" },
@@ -118,13 +176,24 @@ export async function POST(request: Request) {
     });
 
     // Antwort extrahieren und parsen
-    const content = response.choices[0]?.message?.content || '{"vestiaireProducts":[],"vintedProducts":[]}';
+    const content = response.choices[0]?.message?.content || '[]';
     console.log('GPT-Antwort:', content);
     
-    let parsedContent;
+    let rankedProducts: Array<{source: string, id: number}> = [];
     try {
-      parsedContent = JSON.parse(content);
-      console.log('Geparste GPT-Antwort:', parsedContent);
+      const parsedContent = JSON.parse(content);
+      // Prüfen, ob die Antwort ein Array mit Produkten ist
+      if (Array.isArray(parsedContent.products)) {
+        rankedProducts = parsedContent.products;
+      } else if (Array.isArray(parsedContent)) {
+        rankedProducts = parsedContent;
+      } else {
+        console.error('Ungültiges Format der GPT-Antwort:', parsedContent);
+        return NextResponse.json(
+          { error: 'Ungültiges Format der GPT-Antwort' },
+          { status: 500 }
+        );
+      }
     } catch (parseError) {
       console.error('Fehler beim Parsen der GPT-Antwort:', parseError);
       return NextResponse.json(
@@ -133,42 +202,39 @@ export async function POST(request: Request) {
       );
     }
     
-    // Überprüfen, ob die erwarteten Arrays in der Antwort vorhanden sind
-    if (!Array.isArray(parsedContent.vestiaireProducts) || !Array.isArray(parsedContent.vintedProducts)) {
-      console.error('Ungültiges Format der GPT-Antwort:', parsedContent);
-      return NextResponse.json(
-        { error: 'Ungültiges Format der GPT-Antwort' },
-        { status: 500 }
-      );
+    // Die vollständigen Produktobjekte basierend auf den IDs und Quellen zurückgeben
+    const resultProducts: RankedProduct[] = [];
+    
+    for (const item of rankedProducts) {
+      if (resultProducts.length >= 20) break; // Maximal 20 Ergebnisse zurückgeben
+      
+      if (item.source === 'vestiaire' && item.id >= 0 && item.id < vestiaireProducts.length) {
+        const product = vestiaireProducts[item.id];
+        resultProducts.push({
+          source: 'vestiaire',
+          ...product
+        });
+      } else if (item.source === 'vinted' && item.id >= 0 && item.id < vintedProducts.length) {
+        const product = vintedProducts[item.id];
+        resultProducts.push({
+          source: 'vinted',
+          ...product
+        });
+      } else if (item.source === 'farfetch' && item.id >= 0 && item.id < farfetchProducts.length) {
+        const product = farfetchProducts[item.id];
+        resultProducts.push({
+          source: 'farfetch',
+          ...product
+        });
+      } else {
+        console.warn(`Ungültiges Produkt: ${JSON.stringify(item)}`);
+      }
     }
     
-    // Die vollständigen Produktobjekte basierend auf den IDs zurückgeben
-    const rankedVestiaireProducts = parsedContent.vestiaireProducts
-      .map((id: number) => {
-        if (id >= 0 && id < vestiaireProducts.length) {
-          return vestiaireProducts[id];
-        }
-        console.warn(`Ungültige Vestiaire-Produkt-ID: ${id}`);
-        return null;
-      })
-      .filter(Boolean);
-      
-    const rankedVintedProducts = parsedContent.vintedProducts
-      .map((id: number) => {
-        if (id >= 0 && id < vintedProducts.length) {
-          return vintedProducts[id];
-        }
-        console.warn(`Ungültige Vinted-Produkt-ID: ${id}`);
-        return null;
-      })
-      .filter(Boolean);
-    
-    console.log(`Anzahl bewerteter Vestiaire-Produkte: ${rankedVestiaireProducts.length}`);
-    console.log(`Anzahl bewerteter Vinted-Produkte: ${rankedVintedProducts.length}`);
+    console.log(`Anzahl zurückgegebener Produkte: ${resultProducts.length}`);
     
     return NextResponse.json({
-      vestiaireProducts: rankedVestiaireProducts,
-      vintedProducts: rankedVintedProducts
+      products: resultProducts
     });
   } catch (error) {
     console.error('Fehler bei der Bewertung der Produkte:', error);
