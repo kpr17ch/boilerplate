@@ -23,6 +23,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
       
       {message.products && message.products.length > 0 && (
         <div className="mt-4">
+          <h3 className="text-black text-sm font-medium mb-3">Produkte passend zu deiner Anfrage</h3>
           <ProductGrid products={message.products} />
         </div>
       )}
