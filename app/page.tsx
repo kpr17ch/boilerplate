@@ -32,6 +32,30 @@ interface VintedProduct {
   productUrl: string;
 }
 
+// Farfetch Produkt-Interface
+interface FarfetchProduct {
+  productId: string;
+  name: string;
+  brand: string;
+  price: string;
+  size?: string;
+  imageUrl: string;
+  productUrl: string;
+}
+
+// Gemeinsames Produkt-Interface für die Ergebnisliste nach Ranking
+interface RankedProduct {
+  source: 'vestiaire' | 'vinted' | 'farfetch';
+  productId: string;
+  name: string;
+  brand: string;
+  price: string;
+  size?: string;
+  imageUrl: string;
+  productUrl: string;
+  condition?: string;
+}
+
 // Chat-Nachrichtentypen
 type ChatMessageType = 'query' | 'results' | 'loading';
 
@@ -42,193 +66,10 @@ interface ChatMessage {
   query?: string;
   vestiaireProducts?: VestiaireProduct[];
   vintedProducts?: VintedProduct[];
+  farfetchProducts?: FarfetchProduct[];
   searchTerm?: string;
   timestamp: Date;
 }
-
-// Produktkachel-Komponente für Vestiaire-Produkte
-const ProductCard = ({ product, source }: { product: VestiaireProduct | VintedProduct, source: 'vestiaire' | 'vinted' }) => (
-  <a 
-    href={product.productUrl} 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col relative"
-  >
-    <div className="h-48 bg-gradient-to-br from-[#5E6AD2]/20 to-[#5E6AD2]/5 flex items-center justify-center overflow-hidden relative">
-      {product.imageUrl && product.imageUrl !== 'Bild nicht verfügbar' ? (
-        <>
-          <img 
-            src={product.imageUrl} 
-            alt={product.name} 
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = '/placeholder-image.jpg';
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        </>
-      ) : (
-        <div className="text-3xl text-white/30">📦</div>
-      )}
-      <div className="absolute top-2 right-2">
-        <span className={`text-xs px-2 py-1 rounded-full backdrop-blur-md ${
-          source === 'vestiaire' 
-            ? 'bg-[#5E6AD2]/20 text-[#5E6AD2] border border-[#5E6AD2]/30' 
-            : 'bg-[#FF5A5F]/20 text-[#FF5A5F] border border-[#FF5A5F]/30'
-        }`}>
-          {source === 'vestiaire' ? 'Vestiaire' : 'Vinted'}
-        </span>
-      </div>
-    </div>
-    <div className="p-4 flex-1 flex flex-col">
-      <div className="flex justify-between items-start mb-2">
-        <h3 className="text-white font-medium truncate text-sm group-hover:text-[#5E6AD2] transition-colors">
-          {product.name}
-        </h3>
-      </div>
-      <span className="bg-[#5E6AD2]/20 text-[#5E6AD2] px-2 py-1 text-xs rounded-full inline-block mb-2 border border-[#5E6AD2]/30">
-        {product.brand}
-      </span>
-      <p className="text-white/60 text-xs mb-3 line-clamp-1 flex-1">{product.size}</p>
-      <div className="flex justify-between items-center mt-auto">
-        <span className="text-white font-semibold text-sm group-hover:text-[#5E6AD2] transition-colors">
-          {product.price}
-        </span>
-        <span className="text-white/40 text-xs group-hover:text-white/60 transition-colors">
-          Zum Shop →
-        </span>
-      </div>
-    </div>
-  </a>
-);
-
-// Komponente für Benutzeranfrage
-const QueryMessage = ({ query }: { query: string }) => (
-  <div className="mb-6 transform hover:scale-[1.01] transition-transform">
-    <div className="flex items-center mb-2">
-      <div className="w-8 h-8 rounded-full bg-[#5E6AD2]/20 flex items-center justify-center text-[#5E6AD2] font-medium mr-2 border border-[#5E6AD2]/30">
-        Du
-      </div>
-      <span className="text-white/60 text-xs">Gerade eben</span>
-    </div>
-    <div className="pl-10">
-      <p className="text-white bg-white/5 backdrop-blur-sm rounded-lg p-3 border border-white/10 inline-block">
-        {query}
-      </p>
-    </div>
-  </div>
-);
-
-// Lade-Komponente
-const LoadingMessage = () => (
-  <div className="mb-4">
-    <div className="flex items-center mb-2">
-      <div className="w-8 h-8 rounded-full bg-[#5E6AD2]/20 flex items-center justify-center mr-2">
-        <svg className="w-5 h-5 text-[#5E6AD2]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      </div>
-      <span className="text-white/60 text-xs">Suche bei Vestiaire Collective...</span>
-    </div>
-    <div className="pl-10">
-      <div className="flex space-x-2">
-        <div className="w-2 h-2 rounded-full bg-[#5E6AD2] animate-bounce"></div>
-        <div className="w-2 h-2 rounded-full bg-[#5E6AD2] animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-        <div className="w-2 h-2 rounded-full bg-[#5E6AD2] animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-      </div>
-    </div>
-  </div>
-);
-
-// Komponente für Suchergebnisse
-const ResultsMessage = ({ 
-  query, 
-  vestiaireProducts, 
-  vintedProducts, 
-  searchTerm 
-}: { 
-  query: string, 
-  vestiaireProducts: VestiaireProduct[], 
-  vintedProducts: VintedProduct[], 
-  searchTerm?: string 
-}) => (
-  <div className="mb-6">
-    <div className="flex items-center mb-2">
-      <div className="w-8 h-8 rounded-full bg-[#5E6AD2]/20 flex items-center justify-center mr-2">
-        <svg className="w-5 h-5 text-[#5E6AD2]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      </div>
-      <span className="text-white/60 text-xs">Gerade eben</span>
-    </div>
-    <div className="pl-10">
-      <div className="mb-3">
-        <p className="text-white mb-2">
-          Hier sind Ergebnisse für "{query}":
-          {searchTerm && (
-            <span className="text-white/60 text-xs ml-2">
-              (Suchbegriff: <span className="bg-[#5E6AD2]/20 text-[#5E6AD2] px-1.5 py-0.5 rounded-full">{searchTerm}</span>)
-            </span>
-          )}
-        </p>
-      </div>
-      
-      {(vestiaireProducts && vestiaireProducts.length > 0) || (vintedProducts && vintedProducts.length > 0) ? (
-        <>
-          {/* Vestiaire Collective Ergebnisse */}
-          {vestiaireProducts && vestiaireProducts.length > 0 && (
-            <div className="mb-4">
-              <h3 className="text-white/80 text-sm font-medium mb-2">Vestiaire Collective</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {vestiaireProducts.slice(0, 4).map((product, index) => (
-                  <ProductCard key={`vestiaire-${product.productId}-${index}`} product={product} source="vestiaire" />
-                ))}
-              </div>
-              {vestiaireProducts.length > 4 && (
-                <p className="text-white/60 text-xs mt-2">
-                  {vestiaireProducts.length - 4} weitere Produkte bei Vestiaire Collective verfügbar.
-                </p>
-              )}
-            </div>
-          )}
-          
-          {/* Vinted Ergebnisse */}
-          {vintedProducts && vintedProducts.length > 0 && (
-            <div>
-              <h3 className="text-white/80 text-sm font-medium mb-2">Vinted</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {vintedProducts.slice(0, 4).map((product, index) => (
-                  <ProductCard key={`vinted-${product.productId}-${index}`} product={product} source="vinted" />
-                ))}
-              </div>
-              {vintedProducts.length > 4 && (
-                <p className="text-white/60 text-xs mt-2">
-                  {vintedProducts.length - 4} weitere Produkte bei Vinted verfügbar.
-                </p>
-              )}
-            </div>
-          )}
-        </>
-      ) : (
-        <p className="text-white/60">Keine Produkte gefunden. Bitte versuche es mit einer anderen Suchanfrage.</p>
-      )}
-    </div>
-  </div>
-);
-
-// Initiale Lade-Animation
-const InitialLoading = () => (
-  <div className="min-h-screen pt-28 pb-8 flex items-center justify-center">
-    <div className="text-center">
-      <div className="inline-block relative w-16 h-16">
-        <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-white/5"></div>
-        <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-t-[#5E6AD2] animate-spin"></div>
-      </div>
-      <p className="mt-4 text-white/70 text-sm">Lade Produktsuche...</p>
-    </div>
-  </div>
-);
 
 export default function HomePage() {
   const [messages, setMessages] = useState<Message[]>([
@@ -295,6 +136,7 @@ export default function HomePage() {
 
     try {
       // 1. OpenAI-API aufrufen, um einen Suchbegriff zu generieren
+      console.log('1. OpenAI-API aufrufen, um einen Suchbegriff zu generieren');
       const openaiResponse = await fetch('/api/openai', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -308,11 +150,48 @@ export default function HomePage() {
       const openaiData = await openaiResponse.json();
       const searchTerm = openaiData.searchTerm;
       
+      console.log('OpenAI Response:', openaiData);
+      
       if (!searchTerm) {
         throw new Error('Kein Suchbegriff von der OpenAI-API erhalten');
       }
       
-      // 2. Vestiaire Scraper mit dem generierten Suchbegriff aufrufen
+      // Perplexity-API aufrufen, um Artikelklassifikation zu erhalten
+      console.log('2. Perplexity-API aufrufen für Artikelklassifikation');
+      const perplexityResponse = await fetch('/api/perplexity', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: searchTerm }),
+      });
+      
+      if (!perplexityResponse.ok) {
+        throw new Error(`Fehler bei der Perplexity-API-Anfrage: ${perplexityResponse.status}`);
+      }
+      
+      const perplexityData = await perplexityResponse.json();
+      console.log('Perplexity Response:', perplexityData);
+
+      // 5. Farfetch Scraper aufrufen
+      console.log('5. Farfetch Scraper mit dem Suchbegriff aufrufen:', searchTerm);
+      const farfetchResponse = await fetch('/api/farfetch', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ searchTerm }),
+      });
+      
+      let farfetchProducts: FarfetchProduct[] = [];
+      if (farfetchResponse.ok) {
+        console.log('Farfetch-Scraper erfolgreich ausgeführt');
+        const farfetchData = await farfetchResponse.json();
+        farfetchProducts = farfetchData.products || [];
+        
+        console.log(`Gescrapte Farfetch-Produkte (${farfetchProducts.length}):`);
+      } else {
+        console.error('Fehler bei Farfetch-Scraper:', await farfetchResponse.text());
+      }
+      
+      // 3. Vestiaire Scraper mit dem generierten Suchbegriff aufrufen
+      console.log('3. Vestiaire Scraper mit dem Suchbegriff aufrufen:', searchTerm);
       const vestiaireResponse = await fetch('/api/scraper', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -323,10 +202,14 @@ export default function HomePage() {
         throw new Error(`Fehler bei der Vestiaire-Scraper-API-Anfrage: ${vestiaireResponse.status}`);
       }
       
+      console.log('Vestiaire-Scraper erfolgreich ausgeführt');
       const vestiaireData = await vestiaireResponse.json();
       const vestiaireProducts: VestiaireProduct[] = vestiaireData.products || [];
       
-      // 3. Vinted Scraper aufrufen
+      console.log(`Gescrapte Vestiaire-Produkte (${vestiaireProducts.length}):`);
+      
+      // 4. Vinted Scraper aufrufen
+      console.log('4. Vinted Scraper mit dem Suchbegriff aufrufen:', searchTerm);
       const vintedResponse = await fetch('/api/vinted', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -335,37 +218,65 @@ export default function HomePage() {
       
       let vintedProducts: VintedProduct[] = [];
       if (vintedResponse.ok) {
+        console.log('Vinted-Scraper erfolgreich ausgeführt');
         const vintedData = await vintedResponse.json();
         vintedProducts = vintedData.products || [];
+        
+        console.log(`Gescrapte Vinted-Produkte (${vintedProducts.length}):`);
+      } else {
+        console.error('Fehler bei Vinted-Scraper:', await vintedResponse.text());
       }
       
-      // 4. Produkte in das richtige Format konvertieren
-      const formattedProducts: Product[] = [
-        ...vestiaireProducts.map((product): Product => ({
-          id: product.productId,
-          name: product.name,
-          brand: product.brand,
-          price: product.price,
-          size: product.size,
-          imageUrl: product.imageUrl,
-          retailer: 'Vestiaire Collective',
-          condition: 'Gebraucht',
-          productUrl: product.productUrl
-        })),
-        ...vintedProducts.map((product): Product => ({
-          id: product.productId,
-          name: product.name,
-          brand: product.brand,
-          price: product.price,
-          size: product.size,
-          imageUrl: product.imageUrl,
-          retailer: 'Vinted',
-          condition: product.condition || 'Gebraucht',
-          productUrl: product.productUrl
-        }))
-      ];
+      // 6. Ranking der Ergebnisse basierend auf Perplexity-Daten
+      console.log('6. Ranking der Ergebnisse mit rank-results API');
+      console.log('Daten für rank-results:', {
+        originalQuery: userMessage.content,
+        vestiaireProductsCount: vestiaireProducts.length,
+        vintedProductsCount: vintedProducts.length,
+        farfetchProductsCount: farfetchProducts.length,
+        perplexityDataExists: !!perplexityData
+      });
       
-      // 5. AI-Antwort erstellen
+      const rankResponse = await fetch('/api/rank-results', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          originalQuery: userMessage.content,
+          vestiaireProducts,
+          vintedProducts,
+          farfetchProducts,
+          perplexityData
+        }),
+      });
+      
+      console.log('rank-results API Statuscode:', rankResponse.status);
+      
+      if (!rankResponse.ok) {
+        const errorText = await rankResponse.text();
+        console.error('rank-results API Fehler:', errorText);
+        throw new Error(`Fehler bei der Ranking-API-Anfrage: ${rankResponse.status}, Details: ${errorText}`);
+      }
+      
+      console.log('rank-results API erfolgreich aufgerufen');
+      const rankData = await rankResponse.json();
+      const rankedProducts = rankData.products || [];
+      
+      console.log(`Ergebnisse von rank-results (${rankedProducts.length}):`);
+      
+      // 7. Produkte in das richtige Format konvertieren für die UI-Anzeige
+      const formattedProducts: Product[] = rankedProducts.map((product: RankedProduct): Product => ({
+        id: product.productId,
+        name: product.name,
+        brand: product.brand,
+        price: product.price,
+        size: product.size || '',
+        imageUrl: product.imageUrl,
+        retailer: product.source === 'vestiaire' ? 'Vestiaire Collective' : product.source === 'vinted' ? 'Vinted' : 'Farfetch',
+        condition: product.source === 'vinted' && product.condition ? product.condition : product.source === 'farfetch' && product.condition ? product.condition : 'Gebraucht',
+        productUrl: product.productUrl
+      }));
+      
+      // 8. AI-Antwort erstellen
       const aiResponse: Message = {
         id: uuidv4(),
         content: formattedProducts.length > 0
@@ -381,7 +292,7 @@ export default function HomePage() {
       // Erfolgsmeldung anzeigen
       const totalProducts = formattedProducts.length;
       if (totalProducts > 0) {
-        toast.success(`${totalProducts} Produkte gefunden (${vestiaireProducts.length} bei Vestiaire, ${vintedProducts.length} bei Vinted)`);
+        toast.success(`${totalProducts} Produkte gefunden (${vestiaireProducts.length} bei Vestiaire, ${vintedProducts.length} bei Vinted, ${farfetchProducts.length} bei Farfetch)`);
       } else {
         toast.info('Keine passenden Produkte gefunden');
       }
