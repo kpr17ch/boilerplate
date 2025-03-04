@@ -39,6 +39,16 @@ interface FarfetchProduct {
   productUrl: string;
 }
 
+// SSENSE Produkt-Interface
+interface SSENSEProduct {
+  productId: string;
+  name: string;
+  brand: string;
+  price: string;
+  imageUrl: string;
+  productUrl: string;
+}
+
 // Perplexity Kategorisierungs-Interface
 interface PerplexityResult {
   kategorie: string;
@@ -64,7 +74,7 @@ interface RankedProduct {
 export async function POST(request: Request) {
   try {
     // Daten aus dem Request-Body extrahieren
-    const { originalQuery, vestiaireProducts, vintedProducts, farfetchProducts, perplexityData } = await request.json();
+    const { originalQuery, vestiaireProducts, vintedProducts, farfetchProducts, ssenseProducts, perplexityData } = await request.json();
 
     if (!originalQuery || typeof originalQuery !== 'string') {
       return NextResponse.json(
@@ -73,7 +83,7 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!Array.isArray(vestiaireProducts) || !Array.isArray(vintedProducts) || !Array.isArray(farfetchProducts)) {
+    if (!Array.isArray(vestiaireProducts) || !Array.isArray(vintedProducts) || !Array.isArray(farfetchProducts) || !Array.isArray(ssenseProducts)) {
       return NextResponse.json(
         { error: 'Produktlisten müssen Arrays sein' },
         { status: 400 }
@@ -96,7 +106,7 @@ export async function POST(request: Request) {
     // System-Prompt erstellen für die Bewertung der Produkte basierend auf Perplexity-Kategorisierung
 const systemPrompt = `Du bist ein Experte für Mode und Shopping, der Produkte anhand detaillierter Suchkriterien bewertet.
 
-Deine Aufgabe ist es, Produkte von Vestiaire Collective, Vinted und Farfetch zu analysieren und zu bewerten, wie gut sie mit den folgenden, aus der Benutzeranfrage extrahierten Kriterien übereinstimmen:
+Deine Aufgabe ist es, Produkte von Vestiaire Collective, Vinted und Farfetch und SSENSE zu analysieren und zu bewerten, wie gut sie mit den folgenden, aus der Benutzeranfrage extrahierten Kriterien übereinstimmen:
 - Kategorie (z. B. Schuhe, Hose, Jacke, T-Shirt etc.)
 - Marke
 - Modellname
@@ -119,6 +129,7 @@ Gib die Produkte als EINZIGES JSON-Objekt zurück, das genau ein Property "produ
     {"source": "vestiaire", "id": 5235235},
     {"source": "vinted", "id": 12321432},
     {"source": "farfetch", "id": 4637634},
+    {"source": "ssense", "id": 12321432},
     ...
   ]
 }
@@ -150,6 +161,12 @@ Gib NUR das JSON-Objekt zurück, ohne zusätzliche Erklärungen.`;
       price: product.price
     }));
 
+    const ssenseProductsForPrompt = ssenseProducts.map((product: SSENSEProduct, index: number) => ({
+      id: index,
+      name: product.name,
+      brand: product.brand,
+      price: product.price
+    }));
     // Anfrage an OpenAI senden
     const response = await openai.chat.completions.create({
       model: 'gpt-4o',
@@ -168,7 +185,10 @@ Gib NUR das JSON-Objekt zurück, ohne zusätzliche Erklärungen.`;
           ${JSON.stringify(vintedProductsForPrompt, null, 2)}
           
           Farfetch Produkte:
-          ${JSON.stringify(farfetchProductsForPrompt, null, 2)}`
+          ${JSON.stringify(farfetchProductsForPrompt, null, 2)}
+          
+          SSENSE Produkte:
+          ${JSON.stringify(ssenseProductsForPrompt, null, 2)}`
         }
       ],
       response_format: { type: "json_object" },
@@ -224,6 +244,12 @@ Gib NUR das JSON-Objekt zurück, ohne zusätzliche Erklärungen.`;
         const product = farfetchProducts[item.id];
         resultProducts.push({
           source: 'farfetch',
+          ...product
+        });
+      } else if (item.source === 'ssense' && item.id >= 0 && item.id < ssenseProducts.length) {
+        const product = ssenseProducts[item.id];
+        resultProducts.push({
+          source: 'ssense',
           ...product
         });
       } else {
