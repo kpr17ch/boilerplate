@@ -43,9 +43,19 @@ interface FarfetchProduct {
   productUrl: string;
 }
 
+// SSENSE Produkt-Interface
+interface SSENSEProduct {
+  productId: string;
+  name: string;
+  brand: string;
+  price: string;
+  imageUrl: string;
+  productUrl: string;
+}
+
 // Gemeinsames Produkt-Interface für die Ergebnisliste nach Ranking
 interface RankedProduct {
-  source: 'vestiaire' | 'vinted' | 'farfetch';
+  source: 'vestiaire' | 'vinted' | 'farfetch' | 'ssense';
   productId: string;
   name: string;
   brand: string;
@@ -67,8 +77,11 @@ interface ChatMessage {
   vestiaireProducts?: VestiaireProduct[];
   vintedProducts?: VintedProduct[];
   farfetchProducts?: FarfetchProduct[];
+  ssenseProducts?: SSENSEProduct[];
   searchTerm?: string;
-  timestamp: Date;
+  timestamp: string;
+  content?: string;
+  sender?: 'user' | 'ai';
 }
 
 export default function HomePage() {
@@ -171,73 +184,125 @@ export default function HomePage() {
       const perplexityData = await perplexityResponse.json();
       console.log('Perplexity Response:', perplexityData);
 
-      // 5. Farfetch Scraper aufrufen
-      console.log('5. Farfetch Scraper mit dem Suchbegriff aufrufen:', searchTerm);
-      const farfetchResponse = await fetch('/api/farfetch', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ searchTerm }),
-      });
+      // Alle Scraper parallel aufrufen
+      console.log('Starte alle Scraper parallel mit dem Suchbegriff:', searchTerm);
       
-      let farfetchProducts: FarfetchProduct[] = [];
-      if (farfetchResponse.ok) {
-        console.log('Farfetch-Scraper erfolgreich ausgeführt');
-        const farfetchData = await farfetchResponse.json();
-        farfetchProducts = farfetchData.products || [];
-        
-        console.log(`Gescrapte Farfetch-Produkte (${farfetchProducts.length}):`);
-      } else {
-        console.error('Fehler bei Farfetch-Scraper:', await farfetchResponse.text());
-      }
+      // Scraper-Funktionen definieren
+      const fetchFarfetchProducts = async () => {
+        try {
+          console.log('Farfetch Scraper wird ausgeführt...');
+          const response = await fetch('/api/farfetch', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ searchTerm }),
+          });
+          
+          if (!response.ok) {
+            console.error('Fehler bei Farfetch-Scraper:', await response.text());
+            return { products: [] };
+          }
+          
+          const data = await response.json();
+          console.log(`Gescrapte Farfetch-Produkte (${data.products?.length || 0}):`);
+          return data;
+        } catch (error) {
+          console.error('Fehler bei Farfetch-Scraper:', error);
+          return { products: [] };
+        }
+      };
+
+      const fetchSsenseProducts = async () => {
+        try {
+          console.log('SSENSE Scraper wird ausgeführt...');
+          const response = await fetch('/api/ssense', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ searchTerm }),
+          });
+          
+          if (!response.ok) {
+            console.error('Fehler bei SSENSE-Scraper:', await response.text());
+            return { products: [] };
+          }
+          
+          const data = await response.json();
+          console.log(`Gescrapte SSENSE-Produkte (${data.products?.length || 0}):`);
+          return data;
+        } catch (error) {
+          console.error('Fehler bei SSENSE-Scraper:', error);
+          return { products: [] };
+        }
+      };
+
+      const fetchVestiaireProducts = async () => {
+        try {
+          console.log('Vestiaire Scraper wird ausgeführt...');
+          const response = await fetch('/api/scraper', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ searchTerm }),
+          });
+          
+          if (!response.ok) {
+            console.error('Fehler bei Vestiaire-Scraper:', await response.text());
+            return { products: [] };
+          }
+          
+          const data = await response.json();
+          console.log(`Gescrapte Vestiaire-Produkte (${data.products?.length || 0}):`);
+          return data;
+        } catch (error) {
+          console.error('Fehler bei Vestiaire-Scraper:', error);
+          return { products: [] };
+        }
+      };
+
+      const fetchVintedProducts = async () => {
+        try {
+          console.log('Vinted Scraper wird ausgeführt...');
+          const response = await fetch('/api/vinted', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ searchTerm }),
+          });
+          
+          if (!response.ok) {
+            console.error('Fehler bei Vinted-Scraper:', await response.text());
+            return { products: [] };
+          }
+          
+          const data = await response.json();
+          console.log(`Gescrapte Vinted-Produkte (${data.products?.length || 0}):`);
+          return data;
+        } catch (error) {
+          console.error('Fehler bei Vinted-Scraper:', error);
+          return { products: [] };
+        }
+      };
+
+      // Alle Scraper parallel ausführen
+      const [farfetchResult, ssenseResult, vestiaireResult, vintedResult] = await Promise.allSettled([
+        fetchFarfetchProducts(),
+        fetchSsenseProducts(),
+        fetchVestiaireProducts(),
+        fetchVintedProducts()
+      ]);
+
+      // Ergebnisse extrahieren
+      let farfetchProducts: FarfetchProduct[] = farfetchResult.status === 'fulfilled' ? farfetchResult.value.products || [] : [];
+      let ssenseProducts: SSENSEProduct[] = ssenseResult.status === 'fulfilled' ? ssenseResult.value.products || [] : [];
+      let vestiaireProducts: VestiaireProduct[] = vestiaireResult.status === 'fulfilled' ? vestiaireResult.value.products || [] : [];
+      let vintedProducts: VintedProduct[] = vintedResult.status === 'fulfilled' ? vintedResult.value.products || [] : [];
+
+      console.log('Alle Scraper abgeschlossen:');
+      console.log(`- Farfetch: ${farfetchProducts.length} Produkte`);
+      console.log(`- SSENSE: ${ssenseProducts.length} Produkte`);
+      console.log(`- Vestiaire: ${vestiaireProducts.length} Produkte`);
+      console.log(`- Vinted: ${vintedProducts.length} Produkte`);
       
-      // 3. Vestiaire Scraper mit dem generierten Suchbegriff aufrufen
-      console.log('3. Vestiaire Scraper mit dem Suchbegriff aufrufen:', searchTerm);
-      const vestiaireResponse = await fetch('/api/scraper', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ searchTerm }),
-      });
-      
-      if (!vestiaireResponse.ok) {
-        throw new Error(`Fehler bei der Vestiaire-Scraper-API-Anfrage: ${vestiaireResponse.status}`);
-      }
-      
-      console.log('Vestiaire-Scraper erfolgreich ausgeführt');
-      const vestiaireData = await vestiaireResponse.json();
-      const vestiaireProducts: VestiaireProduct[] = vestiaireData.products || [];
-      
-      console.log(`Gescrapte Vestiaire-Produkte (${vestiaireProducts.length}):`);
-      
-      // 4. Vinted Scraper aufrufen
-      console.log('4. Vinted Scraper mit dem Suchbegriff aufrufen:', searchTerm);
-      const vintedResponse = await fetch('/api/vinted', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ searchTerm }),
-      });
-      
-      let vintedProducts: VintedProduct[] = [];
-      if (vintedResponse.ok) {
-        console.log('Vinted-Scraper erfolgreich ausgeführt');
-        const vintedData = await vintedResponse.json();
-        vintedProducts = vintedData.products || [];
-        
-        console.log(`Gescrapte Vinted-Produkte (${vintedProducts.length}):`);
-      } else {
-        console.error('Fehler bei Vinted-Scraper:', await vintedResponse.text());
-      }
-      
-      // 6. Ranking der Ergebnisse basierend auf Perplexity-Daten
-      console.log('6. Ranking der Ergebnisse mit rank-results API');
-      console.log('Daten für rank-results:', {
-        originalQuery: userMessage.content,
-        vestiaireProductsCount: vestiaireProducts.length,
-        vintedProductsCount: vintedProducts.length,
-        farfetchProductsCount: farfetchProducts.length,
-        perplexityDataExists: !!perplexityData
-      });
-      
-      const rankResponse = await fetch('/api/rank-results', {
+      // 7. Ranking der Ergebnisse durchführen
+      console.log('7. Ranking der Ergebnisse aufrufen...');
+      const rankingResponse = await fetch('/api/rank-results', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -245,25 +310,26 @@ export default function HomePage() {
           vestiaireProducts,
           vintedProducts,
           farfetchProducts,
-          perplexityData
+          ssenseProducts,
+          perplexityData: perplexityData
         }),
       });
       
-      console.log('rank-results API Statuscode:', rankResponse.status);
+      console.log('rank-results API Statuscode:', rankingResponse.status);
       
-      if (!rankResponse.ok) {
-        const errorText = await rankResponse.text();
+      if (!rankingResponse.ok) {
+        const errorText = await rankingResponse.text();
         console.error('rank-results API Fehler:', errorText);
-        throw new Error(`Fehler bei der Ranking-API-Anfrage: ${rankResponse.status}, Details: ${errorText}`);
+        throw new Error(`Fehler bei der Ranking-API-Anfrage: ${rankingResponse.status}, Details: ${errorText}`);
       }
       
       console.log('rank-results API erfolgreich aufgerufen');
-      const rankData = await rankResponse.json();
+      const rankData = await rankingResponse.json();
       const rankedProducts = rankData.products || [];
       
       console.log(`Ergebnisse von rank-results (${rankedProducts.length}):`);
       
-      // 7. Produkte in das richtige Format konvertieren für die UI-Anzeige
+      // Produkte in das richtige Format konvertieren für die UI-Anzeige
       const formattedProducts: Product[] = rankedProducts.map((product: RankedProduct): Product => ({
         id: product.productId,
         name: product.name,
@@ -271,13 +337,13 @@ export default function HomePage() {
         price: product.price,
         size: product.size || '',
         imageUrl: product.imageUrl,
-        retailer: product.source === 'vestiaire' ? 'Vestiaire Collective' : product.source === 'vinted' ? 'Vinted' : 'Farfetch',
-        condition: product.source === 'vinted' && product.condition ? product.condition : product.source === 'farfetch' && product.condition ? product.condition : 'Gebraucht',
+        retailer: product.source === 'vestiaire' ? 'Vestiaire Collective' : product.source === 'vinted' ? 'Vinted' : product.source === 'farfetch' ? 'Farfetch' : 'SSENSE',
+        condition: product.source === 'vinted' && product.condition ? product.condition : product.source === 'farfetch' && product.condition ? product.condition : product.source === 'ssense' && product.condition ? product.condition : 'Gebraucht',
         productUrl: product.productUrl
       }));
       
-      // 8. AI-Antwort erstellen
-      const aiResponse: Message = {
+      // Nachricht mit den geordneten Ergebnissen erstellen und hinzufügen
+      const newMessage: Message = {
         id: uuidv4(),
         content: formattedProducts.length > 0
           ? `Hier sind einige Artikel, die deinen Wünschen für "${userMessage.content}" entsprechen:`
@@ -287,15 +353,17 @@ export default function HomePage() {
         products: formattedProducts.length > 0 ? formattedProducts : undefined,
       };
       
-      setMessages(prev => [...prev, aiResponse]);
+      // Füge die Nachricht hinzu
+      setMessages(prev => [...prev, newMessage]);
       
       // Erfolgsmeldung anzeigen
       const totalProducts = formattedProducts.length;
       if (totalProducts > 0) {
-        toast.success(`${totalProducts} Produkte gefunden (${vestiaireProducts.length} bei Vestiaire, ${vintedProducts.length} bei Vinted, ${farfetchProducts.length} bei Farfetch)`);
+        toast.success(`${totalProducts} Produkte gefunden (${vestiaireProducts.length} bei Vestiaire, ${vintedProducts.length} bei Vinted, ${farfetchProducts.length} bei Farfetch, ${ssenseProducts.length} bei SSENSE)`);
       } else {
         toast.info('Keine passenden Produkte gefunden');
       }
+
     } catch (error) {
       console.error('Fehler bei der Produktsuche:', error);
       toast.error('Bei der Suche ist ein Fehler aufgetreten. Bitte versuche es erneut.');
