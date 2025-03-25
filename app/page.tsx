@@ -439,7 +439,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="fashion-ai flex flex-col h-screen bg-white text-black font-neue-machina">
+    <div className="fashion-ai flex flex-col h-screen bg-white text-black">
       {/* Navbar */}
       <header className="py-5 px-8 border-b border-gray-200">
         <div className="flex items-center justify-between">
@@ -448,13 +448,13 @@ export default function HomePage() {
               {isSidebarOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-neue-machina font-light">
+              <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-light">
                 Discover
               </a>
-              <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-neue-machina font-light">
+              <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-light">
                 Trending
               </a>
-              <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-neue-machina font-light">
+              <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-light">
                 Saved
               </a>
             </nav>
@@ -465,10 +465,10 @@ export default function HomePage() {
           </h1>
 
           <div className="flex items-center gap-6">
-            <a href="/profile" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-neue-machina font-light">
+            <a href="/profile" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-light">
               Account
             </a>
-            <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-neue-machina font-light">
+            <a href="#" className="text-xs uppercase tracking-[0.15em] hover:text-gray-500 transition-colors font-light">
               Help
             </a>
           </div>
@@ -507,7 +507,7 @@ export default function HomePage() {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Beschreibe deinen gewünschten Artikel..."
-                className="flex-1 bg-transparent border-b border-gray-300 py-3 px-2 focus:outline-none focus:border-black text-sm tracking-wide placeholder:text-gray-400 placeholder:text-xs placeholder:tracking-wider font-neue-machina font-normal"
+                className="flex-1 bg-transparent border-b border-gray-300 py-3 px-2 focus:outline-none focus:border-black text-sm tracking-wide placeholder:text-gray-400 placeholder:text-xs placeholder:tracking-wider font-normal"
               />
               <button 
                 type="submit"

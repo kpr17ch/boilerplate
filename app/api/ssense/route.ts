@@ -240,20 +240,95 @@ async function extractProductsFromPage(page: Page, log: (message: string) => voi
           productId = urlParts[urlParts.length - 1] || `produkt-${index}`;
           if (productId) selectorStats.withValidId++;
         }
-        
         // Bild-URL extrahieren
-        const imageElement = card.querySelector('picture source[media="(min-width: 2560px)"]');
         let imageUrl = '';
-        if (imageElement) {
-          const srcset = imageElement.getAttribute('srcset');
-          imageUrl = srcset?.split(' ')[0] || '';
+        
+        // Versuche zuerst mit media min-width 2560px und data-srcset
+        const imageElement2560 = card.querySelector('picture source[media="(min-width: 2560px)"]');
+        if (imageElement2560) {
+          const srcset = imageElement2560.getAttribute('data-srcset') || imageElement2560.getAttribute('srcset');
+          if (srcset) {
+            imageUrl = srcset.split(' ')[0] || '';
+            // w-Parameter auf den gleichen Wert wie h-Parameter setzen
+            imageUrl = imageUrl.replace(/w_\d+/g, (match) => {
+              const hMatch = imageUrl.match(/h_(\d+)/);
+              if (hMatch && hMatch[1]) {
+                return `w_${hMatch[1]}`;
+              }
+              return match;
+            });
+          }
         }
+        
+        // Wenn kein Bild gefunden, versuche mit media min-width 1025px
+        if (!imageUrl) {
+          const imageElement1025 = card.querySelector('picture source[media="(min-width: 1025px)"]');
+          if (imageElement1025) {
+            const srcset = imageElement1025.getAttribute('data-srcset') || imageElement1025.getAttribute('srcset');
+            if (srcset) {
+              imageUrl = srcset.split(' ')[0] || '';
+              imageUrl = imageUrl.replace(/w_\d+/g, (match) => {
+                const hMatch = imageUrl.match(/h_(\d+)/);
+                if (hMatch && hMatch[1]) {
+                  return `w_${hMatch[1]}`;
+                }
+                return match;
+              });
+            }
+          }
+        }
+        
+        // Wenn immer noch kein Bild, versuche mit media min-width 768px
+        if (!imageUrl) {
+          const imageElement768 = card.querySelector('picture source[media="(min-width: 768px)"]');
+          if (imageElement768) {
+            const srcset = imageElement768.getAttribute('data-srcset') || imageElement768.getAttribute('srcset');
+            if (srcset) {
+              imageUrl = srcset.split(' ')[0] || '';
+              imageUrl = imageUrl.replace(/w_\d+/g, (match) => {
+                const hMatch = imageUrl.match(/h_(\d+)/);
+                if (hMatch && hMatch[1]) {
+                  return `w_${hMatch[1]}`;
+                }
+                return match;
+              });
+            }
+          }
+        }
+        
+        // Wenn immer noch kein Bild, versuche mit media max-width 768px
+        if (!imageUrl) {
+          const imageElementMax768 = card.querySelector('picture source[media="(max-width: 768px)"]');
+          if (imageElementMax768) {
+            const srcset = imageElementMax768.getAttribute('data-srcset') || imageElementMax768.getAttribute('srcset');
+            if (srcset) {
+              imageUrl = srcset.split(' ')[0] || '';
+              imageUrl = imageUrl.replace(/w_\d+/g, (match) => {
+                const hMatch = imageUrl.match(/h_(\d+)/);
+                if (hMatch && hMatch[1]) {
+                  return `w_${hMatch[1]}`;
+                }
+                return match;
+              });
+            }
+          }
+        }
+        
+        // Als letzten Ausweg, versuche mit img-Tag
         if (!imageUrl) {
           const imgElement = card.querySelector('img');
           if (imgElement) {
-            imageUrl = imgElement.getAttribute('src') || '';
+            imageUrl = imgElement.getAttribute('data-src') || imgElement.getAttribute('src') || '';
+            imageUrl = imageUrl.replace(/w_\d+/g, (match) => {
+              const hMatch = imageUrl.match(/h_(\d+)/);
+              if (hMatch && hMatch[1]) {
+                return `w_${hMatch[1]}`;
+              }
+              return match;
+            });
           }
         }
+        
         if (imageUrl) selectorStats.withImage++;
         
         // Marke extrahieren - data-test="productBrandName0"
