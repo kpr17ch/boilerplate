@@ -19,12 +19,6 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
-    fontFamily: {
-      sans: ["var(--font-neue-machina)"],
-      serif: ["var(--font-neue-machina)"],
-      mono: ["var(--font-neue-machina)"],
-      'neue-machina': ["var(--font-neue-machina)"],
-    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
