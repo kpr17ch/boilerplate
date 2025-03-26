@@ -32,7 +32,7 @@ export async function GET() {
     
     // Hole Profildaten aus der profiles-Tabelle
     const { data: profile, error: profileError } = await supabase
-      .from('profiles')
+      .from('users')
       .select('*')
       .eq('id', user.id)
       .single();
@@ -89,7 +89,7 @@ export async function POST(request: Request) {
     
     // Überprüfe, ob das Profil existiert
     const { data: existingProfile } = await supabase
-      .from('profiles')
+      .from('users')
       .select('id')
       .eq('id', user.id)
       .single();
@@ -99,13 +99,13 @@ export async function POST(request: Request) {
     if (existingProfile) {
       // Profil aktualisieren
       result = await supabase
-        .from('profiles')
+        .from('users')
         .update(profileData)
         .eq('id', user.id);
     } else {
       // Neues Profil erstellen
       result = await supabase
-        .from('profiles')
+        .from('users')
         .insert({
           id: user.id,
           ...profileData

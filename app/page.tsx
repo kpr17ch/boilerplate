@@ -97,18 +97,47 @@ export default function HomePage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean | null>(null);
+  const [currentChatId, setCurrentChatId] = useState<string | null>(null);
+  const [isLoadingOlderMessages, setIsLoadingOlderMessages] = useState(false);
+  const [hasOlderMessages, setHasOlderMessages] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const supabase = createClient();
+
+  // Function to handle scroll to check if we need to load older messages
+  const handleScroll = () => {
+    if (!chatContainerRef.current || !hasOlderMessages || isLoadingOlderMessages) return;
+    
+    const { scrollTop } = chatContainerRef.current;
+    if (scrollTop === 0 && currentChatId) {
+      loadOlderMessages();
+    }
+  };
+  
+  // Observer setup for infinite scrolling
+  useEffect(() => {
+    const chatContainer = chatContainerRef.current;
+    if (chatContainer) {
+      chatContainer.addEventListener('scroll', handleScroll);
+    }
+    
+    return () => {
+      if (chatContainer) {
+        chatContainer.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [currentChatId, hasOlderMessages, isLoadingOlderMessages]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+    if (!isLoadingOlderMessages) {
+      scrollToBottom();
+    }
+  }, [messages, isLoadingOlderMessages]);
 
   // Authentifizierungsstatus prüfen
   useEffect(() => {
@@ -131,6 +160,82 @@ export default function HomePage() {
       inputRef.current.focus();
     }
   }, [isLoggedIn]);
+  
+  // Load older messages when scrolling to the top
+  const loadOlderMessages = async () => {
+    if (!currentChatId || !messages.length || isLoadingOlderMessages) return;
+    
+    try {
+      setIsLoadingOlderMessages(true);
+      const oldestMessage = messages[0];
+      
+      // Use our client API helper
+      const { loadOlderMessages: fetchOlderMessages } = await import('@/utils/chat-client');
+      const olderMessages = await fetchOlderMessages(currentChatId, oldestMessage.timestamp);
+      
+      if (olderMessages.length === 0) {
+        setHasOlderMessages(false);
+        return;
+      }
+      
+      // Preserve scroll position
+      const chatContainer = chatContainerRef.current;
+      const scrollPos = chatContainer?.scrollHeight || 0;
+      
+      // Add older messages to the beginning of the array
+      setMessages(prev => [...olderMessages, ...prev]);
+      
+      // Restore scroll position
+      setTimeout(() => {
+        if (chatContainer) {
+          const newScrollPos = chatContainer.scrollHeight - scrollPos;
+          chatContainer.scrollTop = newScrollPos;
+        }
+        setIsLoadingOlderMessages(false);
+      }, 100);
+      
+    } catch (error) {
+      console.error('Error loading older messages:', error);
+      setIsLoadingOlderMessages(false);
+    }
+  };
+  
+  // Handle chat selection from sidebar
+  const handleChatSelect = async (chatId: string) => {
+    if (chatId === currentChatId) return;
+    
+    try {
+      setIsLoading(true);
+      setCurrentChatId(chatId);
+      setHasOlderMessages(true);
+      
+      // Use our client API helpers
+      const { fetchMessages } = await import('@/utils/chat-client');
+      const chatMessages = await fetchMessages(chatId);
+      
+      if (chatMessages.length > 0) {
+        // Sort messages by timestamp in ascending order
+        const sortedMessages = [...chatMessages].sort((a, b) => 
+          new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+        );
+        setMessages(sortedMessages);
+      } else {
+        // If no messages (unusual case), set to default welcome message
+        setMessages([
+          { 
+            id: '1', 
+            content: 'Willkommen bei Fashion AI. Wie kann ich dir heute helfen?', 
+            sender: 'ai',
+            timestamp: new Date().toISOString(),
+          }
+        ]);
+      }
+    } catch (error) {
+      console.error('Error loading chat:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const handleSendMessage = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
@@ -147,7 +252,27 @@ export default function HomePage() {
     setInputValue('');
     setIsLoading(true);
 
+    // Track the chat ID to ensure it's set outside the try/catch
+    let activeChatId = currentChatId;
+
     try {
+      // Create a new chat if we don't have one yet
+      if (!activeChatId) {
+        const { createChat } = await import('@/utils/chat-client');
+        activeChatId = await createChat(inputValue);
+        
+        if (!activeChatId) {
+          throw new Error('Failed to create chat');
+        }
+        
+        // Update state with the new chat ID
+        setCurrentChatId(activeChatId);
+      }
+      
+      // Save the user message to database
+      const { addMessage } = await import('@/utils/chat-client');
+      await addMessage(activeChatId, userMessage.content, 'user');
+      
       // 1. OpenAI-API aufrufen, um einen Suchbegriff zu generieren
       console.log('1. OpenAI-API aufrufen, um einen Suchbegriff zu generieren');
       const openaiResponse = await fetch('/api/openai', {
@@ -342,8 +467,8 @@ export default function HomePage() {
         productUrl: product.productUrl
       }));
       
-      // Nachricht mit den geordneten Ergebnissen erstellen und hinzufügen
-      const newMessage: Message = {
+      // Create AI response message with product results
+      const aiResponseMessage: Message = {
         id: uuidv4(),
         content: formattedProducts.length > 0
           ? `Hier sind einige Artikel, die deinen Wünschen für "${userMessage.content}" entsprechen:`
@@ -353,8 +478,16 @@ export default function HomePage() {
         products: formattedProducts.length > 0 ? formattedProducts : undefined,
       };
       
-      // Füge die Nachricht hinzu
-      setMessages(prev => [...prev, newMessage]);
+      // Add AI response to messages state
+      setMessages(prev => [...prev, aiResponseMessage]);
+      
+      // Save the AI response to database
+      await addMessage(
+        activeChatId, 
+        aiResponseMessage.content, 
+        'ai',
+        aiResponseMessage.products
+      );
       
       // Erfolgsmeldung anzeigen
       const totalProducts = formattedProducts.length;
@@ -377,6 +510,12 @@ export default function HomePage() {
       };
       
       setMessages(prev => [...prev, errorMessage]);
+      
+      // Save error message to database if we have a chat
+      if (activeChatId) {
+        const { addMessage } = await import('@/utils/chat-client');
+        await addMessage(activeChatId, errorMessage.content, 'ai');
+      }
     } finally {
       setIsLoading(false);
     }
@@ -391,6 +530,8 @@ export default function HomePage() {
         timestamp: new Date().toISOString(),
       }
     ]);
+    setCurrentChatId(null);
+    setHasOlderMessages(true);
   };
 
   // Wenn der Auth-Status noch nicht bekannt ist, zeige Ladeindikator
@@ -477,7 +618,12 @@ export default function HomePage() {
 
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar */}
-        <Sidebar isOpen={isSidebarOpen} onNewChat={handleNewChat} />
+        <Sidebar 
+          isOpen={isSidebarOpen} 
+          onNewChat={handleNewChat} 
+          onChatSelect={handleChatSelect}
+          selectedChatId={currentChatId || undefined}
+        />
 
         {/* Main Chat Area */}
         <div className="flex-1 flex flex-col overflow-hidden">
@@ -485,11 +631,18 @@ export default function HomePage() {
             ref={chatContainerRef}
             className="flex-1 overflow-y-auto p-6 space-y-8"
           >
+            {isLoadingOlderMessages && (
+              <div className="flex justify-center items-center py-4">
+                <div className="dot-flashing"></div>
+              </div>
+            )}
+            
             {messages.map((message) => (
               <div key={message.id}>
                 <ChatMessage message={message} />
               </div>
             ))}
+            
             {isLoading && (
               <div className="flex justify-center items-center py-6">
                 <div className="dot-flashing"></div>

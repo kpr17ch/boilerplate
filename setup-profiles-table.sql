@@ -54,7 +54,7 @@ EXECUTE FUNCTION update_modified_column();
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
 BEGIN
-  INSERT INTO public.profiles (id)
+  INSERT INTO public.users (id)
   VALUES (NEW.id);
   RETURN NEW;
 END;
