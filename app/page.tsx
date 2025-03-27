@@ -534,51 +534,6 @@ export default function HomePage() {
     setHasOlderMessages(true);
   };
 
-  // Wenn der Auth-Status noch nicht bekannt ist, zeige Ladeindikator
-  if (isLoggedIn === null) {
-    return (
-      <div className="min-h-screen pt-28 pb-8 flex items-center justify-center">
-        <div className="text-center">
-          <div className="inline-block relative w-16 h-16">
-            <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-white/5"></div>
-            <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-t-[#5E6AD2] animate-spin"></div>
-          </div>
-          <p className="mt-4 text-white/70 text-sm">Lade Fashion AI...</p>
-        </div>
-      </div>
-    );
-  }
-
-  // Nicht eingeloggte Benutzer sehen eine vereinfachte Oberfläche
-  if (isLoggedIn === false) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Fashion AI - Dein KI-Mode-Assistent
-          </h1>
-          <p className="text-xl text-white/70 mb-10">
-            Melde dich an, um unseren KI-gestützten Produktassistenten zu nutzen und die perfekten Modeartikel zu finden.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <a 
-              href="/login" 
-              className="px-6 py-3 bg-[#5E6AD2] text-white rounded-lg font-medium hover:bg-[#4A55C5] transition-colors"
-            >
-              Anmelden
-            </a>
-            <a 
-              href="/register" 
-              className="px-6 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors"
-            >
-              Registrieren
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="fashion-ai flex flex-col h-screen bg-white text-black">
       {/* Navbar */}
@@ -631,22 +586,33 @@ export default function HomePage() {
             ref={chatContainerRef}
             className="flex-1 overflow-y-auto p-6 space-y-8"
           >
-            {isLoadingOlderMessages && (
-              <div className="flex justify-center items-center py-4">
-                <div className="dot-flashing"></div>
+            {isLoggedIn === null ? (
+              <div className="h-full flex justify-center items-center">
+                <div className="inline-block relative w-16 h-16">
+                  <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-white/5"></div>
+                  <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-t-[#5E6AD2] animate-spin"></div>
+                </div>
               </div>
-            )}
-            
-            {messages.map((message) => (
-              <div key={message.id}>
-                <ChatMessage message={message} />
-              </div>
-            ))}
-            
-            {isLoading && (
-              <div className="flex justify-center items-center py-6">
-                <div className="dot-flashing"></div>
-              </div>
+            ) : (
+              <>
+                {isLoadingOlderMessages && (
+                  <div className="flex justify-center items-center py-4">
+                    <div className="dot-flashing"></div>
+                  </div>
+                )}
+                
+                {messages.map((message) => (
+                  <div key={message.id}>
+                    <ChatMessage message={message} />
+                  </div>
+                ))}
+                
+                {isLoading && (
+                  <div className="flex justify-center items-center py-6">
+                    <div className="dot-flashing"></div>
+                  </div>
+                )}
+              </>
             )}
             <div ref={messagesEndRef} />
           </div>
@@ -661,12 +627,13 @@ export default function HomePage() {
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Beschreibe deinen gewünschten Artikel..."
                 className="flex-1 bg-transparent border-b border-gray-300 py-3 px-2 focus:outline-none focus:border-black text-sm tracking-wide placeholder:text-gray-400 placeholder:text-xs placeholder:tracking-wider font-normal"
+                disabled={isLoggedIn === null}
               />
               <button 
                 type="submit"
-                disabled={!inputValue.trim() || isLoading}
+                disabled={!inputValue.trim() || isLoading || isLoggedIn === null}
                 className={`ml-4 p-3 ${
-                  !inputValue.trim() || isLoading ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-70'
+                  !inputValue.trim() || isLoading || isLoggedIn === null ? 'opacity-30 cursor-not-allowed' : 'hover:opacity-70'
                 }`}
               >
                 <Send size={18} />
@@ -675,6 +642,34 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Only render the "not logged in" view if we're sure the user isn't logged in */}
+      {isLoggedIn === false && (
+        <div className="absolute inset-0 bg-white flex items-center justify-center z-10">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+              Fashion AI - Dein KI-Mode-Assistent
+            </h1>
+            <p className="text-xl text-black/70 mb-10">
+              Melde dich an, um unseren KI-gestützten Produktassistenten zu nutzen und die perfekten Modeartikel zu finden.
+            </p>
+            <div className="flex gap-4 justify-center">
+              <a 
+                href="/login" 
+                className="px-6 py-3 bg-[#5E6AD2] text-white rounded-lg font-medium hover:bg-[#4A55C5] transition-colors"
+              >
+                Anmelden
+              </a>
+              <a 
+                href="/register" 
+                className="px-6 py-3 bg-black/10 text-black rounded-lg font-medium hover:bg-black/20 transition-colors"
+              >
+                Registrieren
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
